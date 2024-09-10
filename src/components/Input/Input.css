@@ -1,0 +1,39 @@
+.input {
+  padding: 12px 16px;
+  border: 1px solid var(--color-dark); /* Clean border */
+  border-radius: 8px; /* Rounded corners to match button */
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  width: 100%; /* Responsive input width */
+  max-width: 400px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-primary); /* Border color on focus */
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 0 0 3px rgba(0, 123, 255, 0.25); /* More pronounced shadow with focus ring */
+}
+
+.input:hover {
+  border-color: var(
+    --color-primary
+  ); /* Hover effect for better interactivity */
+}
+
+.input-disabled {
+  background-color: var(--color-light);
+  border-color: var(--color-dark);
+  cursor: not-allowed;
+  color: var(--color-secondary);
+  opacity: 0.6;
+}
+
+.input::placeholder {
+  color: var(--color-secondary);
+  opacity: 0.7; /* Slightly less opaque placeholder */
+}

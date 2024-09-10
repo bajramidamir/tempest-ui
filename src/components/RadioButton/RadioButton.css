@@ -1,0 +1,25 @@
+.radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio input {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+}
+
+.radio-label {
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.radio input:disabled {
+  cursor: not-allowed;
+}
+
+.radio-disabled .radio-label {
+  color: var(--color-secondary);
+}

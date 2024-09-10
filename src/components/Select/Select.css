@@ -1,0 +1,42 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.select-label {
+  margin-bottom: 0.5rem; /* Space between label and select */
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+select {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid var(--color-dark);
+  border-radius: 8px;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Control maximum width */
+  height: 48px; /* Increased height */
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--color-primary); /* Focus state */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Focus shadow */
+}
+
+select:disabled {
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+  cursor: not-allowed;
+}

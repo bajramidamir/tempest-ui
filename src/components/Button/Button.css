@@ -1,0 +1,64 @@
+.btn {
+  padding: 12px 24px; /* Increased padding for a more comfortable click area */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size as needed */
+  border-radius: 8px; /* Rounded corners */
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s,
+    opacity 0.3s; /* Added transition for shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker shade for hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+}
+
+.btn-success {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker shade for hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker shade for hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+}
+
+.btn-disabled {
+  background-color: #cccccc; /* Adjusted for contrast */
+  color: #666666;
+  cursor: not-allowed;
+  box-shadow: none; /* No shadow for disabled state */
+}

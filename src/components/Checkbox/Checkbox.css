@@ -1,0 +1,25 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox input {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+}
+
+.checkbox-label {
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.checkbox input:disabled {
+  cursor: not-allowed;
+}
+
+.checkbox-disabled .checkbox-label {
+  color: var(--color-secondary);
+}
