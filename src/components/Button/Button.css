@@ -1,13 +1,13 @@
 .btn {
-  padding: 12px 24px; /* Increased padding for a more comfortable click area */
+  padding: 12px 24px; /* Comfortable click area */
   border: none;
   cursor: pointer;
   font-size: 1rem; /* Adjust font size as needed */
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 6px; /* Slightly more rounded corners */
   transition:
     background-color 0.3s,
     box-shadow 0.3s,
-    opacity 0.3s; /* Added transition for shadow */
+    opacity 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
@@ -16,49 +16,54 @@
   outline-offset: 2px;
 }
 
+/* Primary Button */
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-black); /* High contrast against pastel */
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Darker shade for hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+  background-color: #8abbe8; /* Slightly darker pastel blue */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Secondary Button */
 .btn-secondary {
   background-color: var(--color-secondary);
-  color: var(--color-white);
+  color: var(--color-black); /* High contrast */
 }
 
 .btn-secondary:hover {
-  background-color: #5a6268; /* Darker shade for hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+  background-color: #b491c4; /* Darker shade for hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Success Button */
 .btn-success {
   background-color: var(--color-success);
-  color: var(--color-white);
+  color: var(--color-black); /* High contrast */
 }
 
 .btn-success:hover {
-  background-color: #218838; /* Darker shade for hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+  background-color: #a6eb84; /* Slightly darker pastel cyan */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Danger Button */
 .btn-danger {
   background-color: var(--color-danger);
-  color: var(--color-white);
+  color: var(--color-black); /* High contrast */
 }
 
 .btn-danger:hover {
-  background-color: #c82333; /* Darker shade for hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+  background-color: #e998a8; /* Slightly darker pastel pink */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Disabled Button */
 .btn-disabled {
-  background-color: #cccccc; /* Adjusted for contrast */
-  color: #666666;
+  background-color: #e2e2e2; /* Lightened disabled state */
+  color: #7f7f7f;
   cursor: not-allowed;
-  box-shadow: none; /* No shadow for disabled state */
+  box-shadow: none; /* No shadow for disabled */
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../components/Button/Button";
 
 export default {
@@ -14,6 +13,16 @@ export const Primary = () => (
 export const Secondary = () => (
   <Button variant="secondary" onClick={() => alert("Secondary clicked!")}>
     Secondary
+  </Button>
+);
+export const Success = () => (
+  <Button variant="success" onClick={() => alert("Success clicked!")}>
+    Success
+  </Button>
+);
+export const Danger = () => (
+  <Button variant="danger" onClick={() => alert("Danger clicked!")}>
+    Danger
   </Button>
 );
 export const Disabled = () => <Button variant="disabled">Disabled</Button>;
