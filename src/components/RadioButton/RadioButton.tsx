@@ -1,4 +1,5 @@
 import React from "react";
+import "./RadioButton.css"; // Make sure to import the CSS file
 
 interface RadioButtonProps {
   label: string;
@@ -24,7 +25,9 @@ const RadioButton: React.FC<RadioButtonProps> = ({
         onChange={onChange}
         disabled={disabled}
         aria-checked={checked}
+        className="hidden-radio"
       />
+      <span className="custom-radio"></span>
       <span className="radio-label">{label}</span>
     </label>
   );

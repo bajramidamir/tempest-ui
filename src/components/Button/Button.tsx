@@ -5,18 +5,22 @@ interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   disabled?: boolean;
-  variant?: "primary" | "secondary" | "success" | "danger" | "disabled";
+  color?: "primary" | "secondary" | "success" | "danger";
+  variant?: "filled" | "outlined" | "disabled";
+  radius?: "square" | "rounded" | "pill";
 }
 
 const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   disabled,
-  variant = "primary",
+  color = "primary",
+  variant,
+  radius = "square",
 }) => {
   return (
     <button
-      className={`btn btn-${variant}`}
+      className={`btn btn-${variant} btn-${color} btn-${radius}`}
       onClick={onClick}
       disabled={disabled || variant === "disabled"}
       aria-disabled={disabled || variant === "disabled" ? "true" : "false"}

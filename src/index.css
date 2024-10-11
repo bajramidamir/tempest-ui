@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 :root {
-  --color-primary: #a2d2ff; /* Soft pastel blue */
-  --color-secondary: #cdb4db; /* Soft pastel purple */
-  --color-success: #c1fba4; /* Light pastel cyan */
-  --color-danger: #ffafcc; /* Pastel pink */
-  --color-warning: #ffe5b4; /* Light pastel orange */
-  --color-info: #b8f2e6; /* Pastel mint */
-  --color-light: #f8edeb; /* Soft cream */
-  --color-dark: #50514f; /* Muted dark gray for contrast */
-  --color-white: #ffffff; /* Pure white */
-  --color-black: #000000; /* Black for text */
+  --color-primary: #3fa1fc;
+  --color-primary-text: #1a6ab7;
+  --color-secondary: #ba87d8;
+  --color-secondary-text: #78459e;
+  --color-success: #62ce2c;
+  --color-success-text: #409819;
+  --color-danger: #f75f5f;
+  --color-danger-text: #d13030;
+  --color-warning: #ffe5b4;
+  --color-info: #b8f2e6;
+  --color-light: #f8edeb;
+  --color-dark: #50514f;
+  --color-text-medium: #333333;
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
 
 * {
