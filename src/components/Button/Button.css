@@ -126,8 +126,8 @@
 
 /* Disabled Button */
 .btn-disabled {
-  background-color: #e2e2e2;
-  color: #7f7f7f;
+  background-color: var(--color-disabled);
+  color: var(--color-disabled-text);
   cursor: not-allowed;
   box-shadow: none;
   pointer-events: none;

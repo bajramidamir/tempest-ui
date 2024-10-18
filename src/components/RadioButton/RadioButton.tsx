@@ -1,5 +1,5 @@
 import React from "react";
-import "./RadioButton.css"; // Make sure to import the CSS file
+import "./RadioButton.css";
 
 interface RadioButtonProps {
   label: string;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "../components/Modal/Modal";
 import Button from "../components/Button/Button";
+import Input from "../components/Input/Input";
 
 export default {
   title: "Components/Modal",
@@ -12,7 +13,12 @@ export const Default = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={() => setIsOpen(true)}>
+      <Button
+        color="primary"
+        variant="filled"
+        radius="pill"
+        onClick={() => setIsOpen(true)}
+      >
         Open Modal
       </Button>
       <Modal
@@ -21,7 +27,15 @@ export const Default = () => {
         title="Modal Title"
       >
         <p>This is the content inside the modal.</p>
-        <Button variant="secondary" onClick={() => setIsOpen(false)}>
+        <form action="">
+          <Input placeholder="Write something" />
+        </form>
+        <Button
+          color="secondary"
+          variant="filled"
+          radius="pill"
+          onClick={() => setIsOpen(false)}
+        >
           Close Modal
         </Button>
       </Modal>

@@ -16,6 +16,8 @@
   --color-text-medium: #333333;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-disabled-text: #7f7f7f;
+  --color-disabled: #e2e2e2;
 }
 
 * {

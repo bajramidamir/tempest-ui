@@ -29,24 +29,13 @@ export const Default = () => {
         checked={selected === "option3"}
         onChange={() => setSelected("option3")}
       />
+      <RadioButton
+        label="Option 4"
+        name="radioGroup"
+        checked={false}
+        disabled
+        onChange={() => {}}
+      />
     </>
   );
 };
-
-export const Disabled = () => (
-  <>
-    <RadioButton
-      label="Disabled Option"
-      name="radioGroupDisabled"
-      checked={false}
-      onChange={() => {}}
-      disabled
-    />
-    <RadioButton
-      label="Enabled Option"
-      name="radioGroupDisabled"
-      checked={false}
-      onChange={() => {}}
-    />
-  </>
-);

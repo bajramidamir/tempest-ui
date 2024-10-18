@@ -15,7 +15,7 @@
   margin: 4px 0px 4px 0px;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--color-dark);
+  border: 2px solid var(--color-disabled);
   border-radius: 50%;
   position: relative;
   margin-right: 8px;
@@ -26,11 +26,11 @@
 
 .hidden-radio:checked + .custom-radio {
   background-color: var(--color-primary);
-  border-color: #8abbe8;
+  border-color: var(--color-primary);
 }
 
 .hidden-radio:disabled + .custom-radio {
-  background-color: var(--color-secondary);
+  background-color: var(--color-disabled);
   cursor: not-allowed;
 }
 
@@ -40,9 +40,11 @@
 }
 
 .radio-disabled .radio-label {
-  color: var(--color-secondary);
+  color: var(--color-disabled-text);
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
 }
 
-.radio:hover .radio-label {
+.radio:not(.radio-disabled):hover .radio-label {
   color: var(--color-primary);
 }
