@@ -5,8 +5,40 @@ export default {
   component: Button,
 };
 
-export const Primary = () => (
+export const Buttons = () => (
   <div>
+    <Button
+      color="neutral"
+      variant="filled"
+      onClick={() => alert("Neutral clicked!")}
+    >
+      Neutral
+    </Button>
+
+    <br />
+    <br />
+
+    <Button
+      color="neutral"
+      variant="outlined"
+      onClick={() => alert("Neutral clicked!")}
+    >
+      Neutral
+    </Button>
+
+    <br />
+    <br />
+
+    <Button radius="rounded">Neutral</Button>
+
+    <br />
+    <br />
+
+    <Button radius="pill">Neutral</Button>
+
+    <br />
+    <br />
+
     <Button
       color="primary"
       variant="filled"
@@ -14,69 +46,45 @@ export const Primary = () => (
     >
       Primary
     </Button>
+
+    <br />
+    <br />
+
     <Button
       color="primary"
       variant="outlined"
+      onClick={() => alert("Primary clicked!")}
+    >
+      Primary
+    </Button>
+
+    <br />
+    <br />
+
+    <Button
+      color="primary"
+      variant="filled"
       radius="rounded"
-      onClick={() => alert("Outlined clicked!")}
+      onClick={() => alert("Primary clicked!")}
     >
-      Outlined
+      Primary
     </Button>
-  </div>
-);
-export const Secondary = () => (
-  <div>
+
+    <br />
+    <br />
+
     <Button
-      color="secondary"
+      color="primary"
       variant="filled"
-      onClick={() => alert("Secondary clicked!")}
-    >
-      Secondary
-    </Button>
-    <Button
-      color="secondary"
-      variant="outlined"
       radius="pill"
-      onClick={() => alert("Secondary clicked!")}
+      onClick={() => alert("Primary clicked!")}
     >
-      Secondary
+      Primary
     </Button>
+
+    <br />
+    <br />
+
+    <Button variant="disabled">Disabled</Button>
   </div>
 );
-export const Success = () => (
-  <div>
-    <Button
-      color="success"
-      variant="filled"
-      onClick={() => alert("Success clicked!")}
-    >
-      Success
-    </Button>
-    <Button
-      color="success"
-      variant="outlined"
-      onClick={() => alert("Success clicked!")}
-    >
-      Success
-    </Button>
-  </div>
-);
-export const Danger = () => (
-  <div>
-    <Button
-      color="danger"
-      variant="filled"
-      onClick={() => alert("Danger clicked!")}
-    >
-      Danger
-    </Button>
-    <Button
-      color="danger"
-      variant="outlined"
-      onClick={() => alert("Danger clicked!")}
-    >
-      Danger
-    </Button>
-  </div>
-);
-export const Disabled = () => <Button variant="disabled">Disabled</Button>;

@@ -5,6 +5,10 @@ export default {
   component: Input,
 };
 
-export const Default = () => <Input placeholder="Type something..." />;
-export const Disabled = () => <Input placeholder="Disabled input" disabled />;
-export const WithValue = () => <Input value="Pre-filled value" />;
+export const Default = () => (
+  <Input placeholder="Type something..." type="text" />
+);
+export const Disabled = () => (
+  <Input placeholder="Disabled input" disabled type="text" />
+);
+export const WithValue = () => <Input value="Pre-filled value" type="text" />;

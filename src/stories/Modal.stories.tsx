@@ -28,10 +28,10 @@ export const Default = () => {
       >
         <p>This is the content inside the modal.</p>
         <form action="">
-          <Input placeholder="Write something" />
+          <Input type="email" placeholder="Write something" />
         </form>
         <Button
-          color="secondary"
+          color="primary"
           variant="filled"
           radius="pill"
           onClick={() => setIsOpen(false)}

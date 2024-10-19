@@ -1,23 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 :root {
-  --color-primary: #3fa1fc;
-  --color-primary-text: #1a6ab7;
-  --color-secondary: #ba87d8;
-  --color-secondary-text: #78459e;
-  --color-success: #62ce2c;
-  --color-success-text: #409819;
-  --color-danger: #f75f5f;
-  --color-danger-text: #d13030;
-  --color-warning: #ffe5b4;
-  --color-info: #b8f2e6;
-  --color-light: #f8edeb;
-  --color-dark: #50514f;
-  --color-text-medium: #333333;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-disabled-text: #7f7f7f;
-  --color-disabled: #e2e2e2;
+  --color-primary: #e91e63; /* Cool pink accent */
+  --color-primary-text: #b0154b; /* Darker pink for text */
+  --color-primary-light: #ff3f7f;
+  --color-neutral: #6c757d; /* Neutral gray */
+  --color-neutral-text: #dee2e6; /* lighter gray for text */
+  --color-neutral-light: #757f88;
+  --color-success: #62ce2c; /* Keep existing success green */
+  --color-success-text: #409819; /* Darker success green */
+  --color-danger: #f75f5f; /* Keep existing danger red */
+  --color-danger-text: #d13030; /* Darker danger red */
+  --color-warning: #ffe5b4; /* Light, muted yellow */
+  --color-info: #b8f2e6; /* Soft turquoise for info */
+  --color-light: #f8f8f8; /* Off-white for background */
+  --color-dark: #333333; /* Dark gray for text */
+  --color-text-medium: #555555; /* Medium gray for text */
+  --color-white: #ffffff; /* Pure white */
+  --color-black: #000000; /* Pure black */
+  --color-disabled-text: #a0a0a0; /* Light gray for disabled text */
+  --color-disabled: #e0e0e0; /* Light gray for disabled backgrounds */
 }
 
 * {

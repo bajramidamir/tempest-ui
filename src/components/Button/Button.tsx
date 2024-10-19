@@ -5,7 +5,7 @@ interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   disabled?: boolean;
-  color?: "primary" | "secondary" | "success" | "danger";
+  color?: "neutral" | "primary";
   variant?: "filled" | "outlined" | "disabled";
   radius?: "square" | "rounded" | "pill";
 }
@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   disabled,
-  color = "primary",
+  color = "neutral",
   variant,
   radius = "square",
 }) => {
