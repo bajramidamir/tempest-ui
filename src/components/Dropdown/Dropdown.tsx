@@ -24,8 +24,9 @@ const Dropdown: React.FC<DropdownProps> = ({ label, options, onSelect }) => {
   return (
     <div className="dropdown">
       <button className="dropdown-toggle" onClick={handleToggle}>
-        {selected || label}
+        {selected || label} {selected === null && <span>&#8595;</span>}
       </button>
+
       {isOpen && (
         <ul className="dropdown-menu">
           {options.map((option) => (
