@@ -7,7 +7,7 @@
 }
 
 .select-label {
-  margin-bottom: 0.5rem; /* Space between label and select */
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
   color: var(--color-dark);
@@ -16,22 +16,23 @@
 select {
   padding: 12px 16px;
   font-size: 1rem;
-  border: 2px solid var(--color-dark);
+  border: none;
   border-radius: 8px;
-  background-color: var(--color-white);
-  color: var(--color-dark);
+  background-color: var(--color-neutral);
+  color: var(--color-neutral-text);
   cursor: pointer;
   transition:
     border-color 0.2s,
     box-shadow 0.2s;
-  width: 100%; /* Full width */
-  max-width: 400px; /* Control maximum width */
-  height: 48px; /* Increased height */
+  width: 100%;
+  max-width: 400px;
+  height: 48px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 select:focus {
   outline: none;
-  border-color: var(--color-primary); /* Focus state */
+  border-color: var(--color-neutral); /* Focus state */
   box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Focus shadow */
 }
 
