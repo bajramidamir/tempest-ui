@@ -1,6 +1,6 @@
 .text {
   font-family: "Inter", sans-serif;
-  color: var(--color-dark);
+  color: var(--color-black);
   margin-bottom: 16px; /* Consistent spacing */
   line-height: 1.6; /* Improved readability */
 }
@@ -10,55 +10,61 @@
   font-size: 2.25rem;
   font-weight: 600;
   margin-bottom: 24px;
+  color: var(--color-text-heading);
 }
 
 .text-h2 {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 20px;
+  color: var(--color-text-heading);
 }
 
 .text-h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 16px;
+  color: var(--color-text-heading);
 }
 
 .text-h4 {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 12px;
+  color: var(--color-text-heading);
 }
 
 .text-h5 {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 10px;
+  color: var(--color-text-heading);
 }
 
 .text-h6 {
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 8px;
+  color: var(--color-text-heading);
 }
 
 /* Paragraph Variant */
 .text-paragraph {
   font-size: 1rem;
   margin-bottom: 16px;
-  color: var(--color-dark);
+  color: var(--color-text-paragraph);
 }
 
 /* Small Text */
 .text-small {
   font-size: 0.875rem;
-  color: var(--color-secondary);
+  color: var(--color-text-small);
 }
 
 /* Line-Through Text */
 .text-line-through {
   text-decoration: line-through;
-  color: var(--color-dark);
+  color: var(--color-text-small);
 }
 
 /* Custom Color Variant */
@@ -67,11 +73,11 @@
 }
 
 .text-primary {
-  color: var(--color-primary);
+  color: var(--color-primary-text);
 }
 
 .text-secondary {
-  color: var(--color-secondary);
+  color: var(--color-neutral-text);
 }
 
 .text-success {

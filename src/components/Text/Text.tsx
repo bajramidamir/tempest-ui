@@ -1,7 +1,7 @@
 import React from "react";
 import "./Text.css";
 
-type TextProps = {
+interface TextProps {
   variant?:
     | "h1"
     | "h2"
@@ -15,11 +15,11 @@ type TextProps = {
   color?: "primary" | "secondary" | "success" | "danger" | "light" | "dark";
   children: React.ReactNode;
   className?: string;
-};
+}
 
 const Text: React.FC<TextProps> = ({
   variant = "paragraph",
-  color = "dark",
+  color,
   children,
   className = "",
 }) => {

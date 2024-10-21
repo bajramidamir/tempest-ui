@@ -7,25 +7,27 @@ export default {
 };
 
 export const Top = () => (
-  <Tooltip content="This is a tooltip" position="top">
-    <Button variant="primary">Hover me</Button>
-  </Tooltip>
+  <div>
+    <Tooltip content="This is a tooltip" position="top">
+      <Button color="primary">Hover me</Button>
+    </Tooltip>
+  </div>
 );
 
 export const Right = () => (
   <Tooltip content="This is a tooltip" position="right">
-    <Button variant="primary">Hover me</Button>
+    <Button color="primary">Hover me</Button>
   </Tooltip>
 );
 
 export const Bottom = () => (
   <Tooltip content="This is a tooltip" position="bottom">
-    <Button variant="primary">Hover me</Button>
+    <Button color="primary">Hover me</Button>
   </Tooltip>
 );
 
 export const Left = () => (
   <Tooltip content="This is a tooltip" position="left">
-    <Button variant="primary">Hover me</Button>
+    <Button color="primary">Hover me</Button>
   </Tooltip>
 );
