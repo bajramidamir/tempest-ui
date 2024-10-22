@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent, FC } from "react";
 import "./Input.css";
 
 type InputProps = {
@@ -6,10 +6,10 @@ type InputProps = {
   disabled?: boolean;
   value?: string;
   type: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
-const Input: React.FC<InputProps> = ({
+const Input: FC<InputProps> = ({
   placeholder,
   disabled,
   value,

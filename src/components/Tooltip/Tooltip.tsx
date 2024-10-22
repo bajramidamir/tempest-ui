@@ -1,4 +1,4 @@
-import React, { ReactNode, useMemo } from "react";
+import React, { FC, ReactNode, useMemo } from "react";
 import "./Tooltip.css";
 
 interface TooltipProps {
@@ -14,7 +14,7 @@ const generateUniqueId = () => {
   return `tooltip-${idCounter}`;
 };
 
-const Tooltip: React.FC<TooltipProps> = ({ content, children, position }) => {
+const Tooltip: FC<TooltipProps> = ({ content, children, position }) => {
   const id = useMemo(() => generateUniqueId(), []);
 
   return (

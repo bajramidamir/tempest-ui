@@ -1,4 +1,4 @@
-import React, { useState, ReactNode } from "react";
+import React, { useState, ReactNode, FC } from "react";
 import "./Dropdown.css";
 
 interface DropdownProps {
@@ -7,7 +7,7 @@ interface DropdownProps {
   onSelect: (option: string) => void;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ label, options, onSelect }) => {
+const Dropdown: FC<DropdownProps> = ({ label, options, onSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
 

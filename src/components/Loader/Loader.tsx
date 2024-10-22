@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import "./Loader.css";
 
 interface LoaderProps {
   fullscreen?: boolean;
 }
 
-const Loader: React.FC<LoaderProps> = ({ fullscreen }) => {
+const Loader: FC<LoaderProps> = ({ fullscreen }) => {
   return (
     <div
       role="status"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import "./RadioButton.css";
 
 interface RadioButtonProps {
@@ -9,7 +9,7 @@ interface RadioButtonProps {
   disabled?: boolean;
 }
 
-const RadioButton: React.FC<RadioButtonProps> = ({
+const RadioButton: FC<RadioButtonProps> = ({
   label,
   name,
   checked,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import "./Checkbox.css";
 
 interface CheckboxProps {
@@ -8,7 +8,7 @@ interface CheckboxProps {
   disabled?: boolean;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({
+const Checkbox: FC<CheckboxProps> = ({
   label,
   checked,
   onChange,

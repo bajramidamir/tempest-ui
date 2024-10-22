@@ -1,16 +1,16 @@
-import React from "react";
+import React, { FC, ReactNode } from "react";
 import "./Button.css";
 
 interface ButtonProps {
-  children: React.ReactNode;
+  children: ReactNode;
   onClick?: () => void;
   disabled?: boolean;
   color?: "neutral" | "primary";
-  variant?: "filled" | "outlined" | "disabled";
+  variant?: "filled" | "outlined" | "text" | "disabled";
   radius?: "square" | "rounded" | "pill";
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button: FC<ButtonProps> = ({
   children,
   onClick,
   disabled,

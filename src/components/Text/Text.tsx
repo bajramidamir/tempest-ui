@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC, ReactNode } from "react";
 import "./Text.css";
 
 interface TextProps {
@@ -13,11 +13,11 @@ interface TextProps {
     | "small"
     | "line-through";
   color?: "primary" | "secondary" | "success" | "danger" | "light" | "dark";
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
 }
 
-const Text: React.FC<TextProps> = ({
+const Text: FC<TextProps> = ({
   variant = "paragraph",
   color,
   children,

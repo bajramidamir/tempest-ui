@@ -4,9 +4,11 @@
   --color-primary: #e91e63; /* Cool pink accent */
   --color-primary-text: #b0154b; /* Darker pink for text */
   --color-primary-light: #ff3f7f; /* honestly just for the hover */
+  --color-primary-super-light: #ffe0eb;
   --color-neutral: #364156; /* Neutral gray */
   --color-neutral-text: #dee2e6; /* lighter gray for text */
-  --color-neutral-light: #485265; /* honestly just for the hover */
+  --color-neutral-light: #a4b2b9; /* honestly just for the hover */
+  --color-neutral-super-light: #d1d9db;
   --color-success: #62ce2c; /* Keep existing success green */
   --color-success-text: #409819; /* Darker success green */
   --color-danger: #f75f5f; /* Keep existing danger red */

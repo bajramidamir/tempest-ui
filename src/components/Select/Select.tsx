@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import "./Select.css";
 
 interface SelectProps {
@@ -8,7 +8,7 @@ interface SelectProps {
   onChange: (value: string) => void;
 }
 
-const Select: React.FC<SelectProps> = ({
+const Select: FC<SelectProps> = ({
   label,
   options,
   selectedValue,

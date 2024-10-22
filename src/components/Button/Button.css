@@ -36,6 +36,13 @@
   color: inherit;
 }
 
+.btn-text {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  box-shadow: none;
+}
+
 .btn-neutral {
   background-color: var(--color-neutral);
   color: var(--color-neutral-text);
@@ -53,6 +60,16 @@
 .btn-neutral.btn-outlined:hover {
   color: var(--color-neutral-text);
   background-color: var(--color-neutral);
+}
+
+.btn-neutral.btn-text {
+  color: var(--color-neutral);
+  background-color: transparent;
+}
+
+.btn-neutral.btn-text:hover {
+  background-color: var(--color-neutral-super-light);
+  box-shadow: none;
 }
 
 .btn-primary {
@@ -73,6 +90,16 @@
 .btn-primary.btn-outlined:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
+}
+
+.btn-primary.btn-text {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.btn-primary.btn-text:hover {
+  background-color: var(--color-primary-super-light);
+  box-shadow: none;
 }
 
 /* Disabled Button */
