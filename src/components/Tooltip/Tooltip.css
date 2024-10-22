@@ -5,7 +5,6 @@
 
 .tooltip-content {
   visibility: hidden;
-  width: 150px;
   background-color: var(--color-dark);
   color: var(--color-white);
   text-align: center;
@@ -15,7 +14,13 @@
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.3s ease;
-  white-space: nowrap;
+
+  /* Responsive adjustments */
+  white-space: normal; /* Allow text to wrap */
+  max-width: 250px; /* Set a maximum width */
+  width: auto; /* Let the width be dynamic */
+  word-wrap: break-word; /* Ensure long words break */
+  overflow-wrap: break-word; /* Support for all browsers */
 }
 
 /* Tooltip arrow */
@@ -85,4 +90,13 @@
   border-color: transparent transparent transparent var(--color-dark);
   border-width: 5px;
   transform: translateY(-50%);
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .tooltip-content {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+  }
 }

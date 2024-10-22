@@ -7,8 +7,8 @@
     border-color 0.2s,
     box-shadow 0.2s;
   width: 100%;
-  max-width: 400px;
-  outline: none;
+  max-width: 100%; /* Default behavior for small screens */
+  box-sizing: border-box;
 }
 
 .input:focus {
@@ -34,4 +34,11 @@
 .input::placeholder {
   color: var(--color-dark);
   opacity: 0.7;
+}
+
+/* For larger screens, set a maximum width */
+@media (min-width: 768px) {
+  .input {
+    max-width: 400px; /* Constrain width on larger screens */
+  }
 }

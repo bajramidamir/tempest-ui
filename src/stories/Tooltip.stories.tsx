@@ -15,7 +15,10 @@ export const Top = () => (
 );
 
 export const Right = () => (
-  <Tooltip content="This is a tooltip" position="right">
+  <Tooltip
+    content="Hover me to see a bunch of cool and informative text that will help you navigate this wesbite!"
+    position="right"
+  >
     <Button color="primary">Hover me</Button>
   </Tooltip>
 );
