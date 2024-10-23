@@ -1,4 +1,5 @@
 import Button from "../components/Button/Button";
+import Icon from "../components/Icon/Icon";
 
 export default {
   title: "Components/Button",
@@ -11,6 +12,18 @@ export const Buttons = () => (
       color="neutral"
       variant="filled"
       onClick={() => alert("Neutral clicked!")}
+    >
+      Neutral
+    </Button>
+
+    <br />
+    <br />
+
+    <Button
+      color="neutral"
+      variant="outlined"
+      onClick={() => alert("Neutral clicked!")}
+      startIcon={<Icon src="trash.svg" alt="Icon" />}
     >
       Neutral
     </Button>
@@ -39,10 +52,28 @@ export const Buttons = () => (
     <br />
     <br />
 
+    <Button variant="text" color="neutral">
+      Neutral
+    </Button>
+
+    <br />
+    <br />
+
     <Button
       color="primary"
       variant="filled"
       onClick={() => alert("Primary clicked!")}
+    >
+      Primary
+    </Button>
+
+    <br />
+    <br />
+
+    <Button
+      color="primary"
+      radius="rounded"
+      endIcon={<Icon src="download.svg" />}
     >
       Primary
     </Button>
@@ -79,6 +110,13 @@ export const Buttons = () => (
       radius="pill"
       onClick={() => alert("Primary clicked!")}
     >
+      Primary
+    </Button>
+
+    <br />
+    <br />
+
+    <Button variant="text" color="primary">
       Primary
     </Button>
 

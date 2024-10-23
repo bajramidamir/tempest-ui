@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import "./Button.css";
 
 interface ButtonProps {
@@ -8,6 +8,8 @@ interface ButtonProps {
   color?: "neutral" | "primary";
   variant?: "filled" | "outlined" | "text" | "disabled";
   radius?: "square" | "rounded" | "pill";
+  startIcon?: ReactNode;
+  endIcon?: ReactNode;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -17,6 +19,8 @@ const Button: FC<ButtonProps> = ({
   color = "neutral",
   variant,
   radius = "square",
+  startIcon,
+  endIcon,
 }) => {
   return (
     <button
@@ -25,7 +29,9 @@ const Button: FC<ButtonProps> = ({
       disabled={disabled || variant === "disabled"}
       aria-disabled={disabled || variant === "disabled" ? "true" : "false"}
     >
-      {children}
+      {startIcon && <span className="btn-icon-start">{startIcon}</span>}
+      <span className="btn-text">{children}</span>
+      {endIcon && <span className="btn-icon-end">{endIcon}</span>}
     </button>
   );
 };

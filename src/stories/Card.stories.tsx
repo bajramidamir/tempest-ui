@@ -1,6 +1,7 @@
 import Card from "../components/Card/Card";
 import Button from "../components/Button/Button";
 import Text from "../components/Text/Text";
+import Icon from "../components/Icon/Icon";
 
 export default {
   title: "Components/Card",
@@ -45,7 +46,11 @@ export const WithoutTitle = () => (
       </Text>
     }
     actions={
-      <Button color="primary" variant="filled">
+      <Button
+        color="primary"
+        variant="filled"
+        endIcon={<Icon src="download.svg" />}
+      >
         Action
       </Button>
     }
