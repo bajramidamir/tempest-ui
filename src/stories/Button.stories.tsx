@@ -19,6 +19,14 @@ export const Buttons = () => (
     <br />
     <br />
 
+    <Button radius="pill" variant="outlined">
+      {" "}
+      <Icon src="trash.svg" />{" "}
+    </Button>
+
+    <br />
+    <br />
+
     <Button
       color="neutral"
       variant="outlined"
