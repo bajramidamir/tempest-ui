@@ -16,9 +16,7 @@
 select {
   padding: 8px 16px;
   font-size: 1rem;
-  border: none;
-  background-color: var(--color-neutral);
-  color: var(--color-neutral-text);
+  border: 2px solid transparent;
   transition:
     border-color 0.2s,
     box-shadow 0.2s;
@@ -26,12 +24,35 @@ select {
   max-width: 400px;
   height: 48px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  color: var(--color-dark);
+  position: relative;
+}
+
+select::after {
+  content: "";
+  display: block;
+  height: 10px;
+}
+
+.select-primary {
+  border-color: var(--color-primary);
+}
+
+.select-neutral {
+  border-color: var(--color-secondary);
+}
+
+select option {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 4px 8px;
+  margin: 2px 0;
 }
 
 select:focus {
   outline: none;
-  border-color: var(--color-neutral); /* Focus state */
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Focus shadow */
+  box-shadow: 0 0 4px var(--color-primary-super-light);
 }
 
 select:disabled {

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import "./Select.css";
 
 interface SelectProps {
@@ -6,6 +6,7 @@ interface SelectProps {
   options: { value: string; label: string; disabled?: boolean }[];
   selectedValue: string;
   onChange: (value: string) => void;
+  color: "primary" | "neutral";
 }
 
 const Select: FC<SelectProps> = ({
@@ -13,11 +14,13 @@ const Select: FC<SelectProps> = ({
   options,
   selectedValue,
   onChange,
+  color = "primary",
 }) => {
   return (
     <div className="select">
       <label className="select-label">{label}</label>
       <select
+        className={`select-${color}`}
         value={selectedValue}
         onChange={(e) => onChange(e.target.value)}
         aria-label={label}

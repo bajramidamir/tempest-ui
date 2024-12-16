@@ -21,6 +21,7 @@ export const Default = () => {
       options={options}
       selectedValue={selected}
       onChange={setSelected}
+      color="primary"
     />
   );
 };
@@ -40,6 +41,7 @@ export const WithDisabledOptions = () => {
       options={options}
       selectedValue={selected}
       onChange={setSelected}
+      color="neutral"
     />
   );
 };

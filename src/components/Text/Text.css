@@ -1,8 +1,8 @@
 .text {
   font-family: "Inter", sans-serif;
   color: var(--color-black);
-  margin-bottom: 16px; /* Consistent spacing */
-  line-height: 1.6; /* Improved readability */
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
 /* Heading Variants */

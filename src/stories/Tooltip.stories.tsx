@@ -1,5 +1,6 @@
 import Tooltip from "../components/Tooltip/Tooltip";
 import Button from "../components/Button/Button";
+import Text from "../components/Text/Text";
 
 export default {
   title: "Components/Tooltip",
@@ -32,5 +33,13 @@ export const Bottom = () => (
 export const Left = () => (
   <Tooltip content="This is a tooltip" position="left">
     <Button color="primary">Hover me</Button>
+  </Tooltip>
+);
+
+export const TextTooltip = () => (
+  <Tooltip content="This is a tooltip" position="bottom">
+    <Text variant="h1" color="dark">
+      Text
+    </Text>
   </Tooltip>
 );

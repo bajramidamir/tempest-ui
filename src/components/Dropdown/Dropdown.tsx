@@ -1,8 +1,8 @@
-import { useState, ReactNode, FC, ChangeEvent } from "react";
+import { useState, FC, ChangeEvent } from "react";
 import "./Dropdown.css";
 
 interface DropdownProps {
-  label: ReactNode;
+  label: string;
   options: string[];
   onSelect: (selectedOptions: string[]) => void;
   isMultiSelect?: boolean;
