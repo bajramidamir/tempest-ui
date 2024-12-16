@@ -3,27 +3,18 @@ import "./Chip.css";
 
 interface ChipProps {
   label: string;
-  onRemove?: () => void;
-  removable?: boolean;
+  onToggle?: (label: string) => void;
+  isSelected?: boolean;
 }
 
-const Chip: FC<ChipProps> = ({ label, onRemove, removable = true }) => {
+const Chip: FC<ChipProps> = ({ label, onToggle, isSelected }) => {
   return (
-    <div className="chip">
+    <button
+      className={`chip ${isSelected ? "chip-selected" : ""}`}
+      onClick={() => onToggle?.(label)}
+    >
       <span className="chip-label">{label}</span>
-      {removable && (
-        <button
-          className="chip-remove"
-          onClick={(e) => {
-            e.stopPropagation();
-            onRemove?.();
-          }}
-          aria-label={`Remove ${label}`}
-        >
-          X
-        </button>
-      )}
-    </div>
+    </button>
   );
 };
 
