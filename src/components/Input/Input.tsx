@@ -1,13 +1,13 @@
-import React, { ChangeEvent, FC } from "react";
+import { ChangeEvent, FC } from "react";
 import "./Input.css";
 
-type InputProps = {
+interface InputProps {
   placeholder?: string;
   disabled?: boolean;
   value?: string;
   type: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-};
+}
 
 const Input: FC<InputProps> = ({
   placeholder,
