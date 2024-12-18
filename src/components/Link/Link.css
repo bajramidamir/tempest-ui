@@ -1,0 +1,18 @@
+.link {
+  text-decoration: underline;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.link-disabled {
+  text-decoration: none;
+  color: var(--color-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
