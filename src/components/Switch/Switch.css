@@ -1,0 +1,59 @@
+/* Base styles for the switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider styles */
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-neutral-super-light);
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Slider circle */
+.switch-slider:before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Checked state styles */
+.switch input:checked + .switch-slider {
+  background-color: var(--color-primary);
+}
+
+.switch input:checked + .switch-slider:before {
+  transform: translateX(20px);
+}
+
+/* Disabled state */
+.switch.switch-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.switch.switch-disabled .switch-slider {
+  background-color: #ddd;
+}

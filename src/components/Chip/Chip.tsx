@@ -12,6 +12,8 @@ const Chip: FC<ChipProps> = ({ label, onToggle, isSelected }) => {
     <button
       className={`chip ${isSelected ? "chip-selected" : ""}`}
       onClick={() => onToggle?.(label)}
+      aria-pressed={isSelected}
+      aria-label={`Toggle ${label}`}
     >
       <span className="chip-label">{label}</span>
     </button>
