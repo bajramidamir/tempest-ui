@@ -2,6 +2,7 @@ import Card from "../components/Card/Card";
 import Button from "../components/Button/Button";
 import Text from "../components/Text/Text";
 import Icon from "../components/Icon/Icon";
+import Avatar from "../components/Avatar/Avatar";
 
 export default {
   title: "Components/Card",
@@ -69,6 +70,8 @@ export const WithoutActions = () => (
 
 export const FullCard = () => (
   <Card
+    avatar=<Avatar fallbackText="JD" />
+    avatarTitle="Jason Dason"
     image="https://via.placeholder.com/150"
     title="Full Card Example"
     content={
@@ -86,6 +89,39 @@ export const FullCard = () => (
           Action 2
         </Button>
       </>
+    }
+  />
+);
+
+export const WithAvatar = () => (
+  <Card
+    avatar=<Avatar fallbackText="DB" />
+    image="https://picsum.photos/1000"
+    content={
+      <>
+        <Text variant="paragraph">Here is some sample text.</Text>
+        <Text variant="small">Some small text, too.</Text>
+      </>
+    }
+  />
+);
+
+export const FauxSocialMediaPost = () => (
+  <Card
+    avatar=<Avatar size="medium" fallbackText="MM" />
+    avatarTitle="Mujo Mujic"
+    title="My Day at [EVENT]"
+    content={
+      <>
+        <Text variant="paragraph">
+          It's a great honour to bla bla bla LinkedIn post{" "}
+        </Text>
+      </>
+    }
+    actions={
+      <Button color="primary" variant="text">
+        Like
+      </Button>
     }
   />
 );
