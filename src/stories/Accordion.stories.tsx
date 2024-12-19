@@ -1,5 +1,6 @@
 import Accordion from "../components/Accordion/Accordion";
 import Text from "../components/Text/Text";
+import Button from "../components/Button/Button";
 
 export default {
   title: "Components/Accordion",
@@ -34,3 +35,12 @@ export const PreExpanded = () => {
     </Accordion>
   );
 };
+
+export const Testing = () => (
+  <div>
+    <Accordion title="Where can I apply?">
+      <Text>Simple! Right here!</Text>
+      <Button>Apply!</Button>
+    </Accordion>
+  </div>
+);

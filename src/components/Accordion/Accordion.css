@@ -3,13 +3,15 @@
   margin-bottom: 1rem;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  transition: all;
 }
 
 .accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 1rem;
+  padding: 0.875rem;
   background-color: var(--color-primary);
   cursor: pointer;
   border: none;
@@ -34,21 +36,35 @@
 .accordion-header span {
   font-size: 1.25rem;
   transition: transform 0.3s ease;
+  margin-right: 25px;
 }
 
-.accordion-header[aria-expanded="true"] span {
+.accordion-header span.open {
   transform: rotate(180deg);
 }
 
-.accordion-content {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
-  padding: 16px;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
+.accordion-header span.closed {
+  transform: rotate(0deg);
 }
 
+/* Handle animation for the accordion content */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  transition:
+    max-height 0.3s ease-in-out,
+    padding 0.3s ease-in-out;
+}
+
+.accordion-content.open {
+  max-height: 500px; /* Adjust this value to fit your content's expected size */
+  padding: 16px;
+}
+
+/* Ensures there's no extra margin for inner content */
 .accordion-content > * {
   margin-bottom: 0 !important; /* Reset margin for all direct children */
 }

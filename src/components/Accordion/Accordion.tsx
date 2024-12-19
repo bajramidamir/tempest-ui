@@ -18,11 +18,17 @@ const Accordion: FC<AccordionProps> = ({
 
   return (
     <div className="accordion">
-      <div className="accordion-header" onClick={toggleAccordion}>
+      <div
+        className="accordion-header"
+        onClick={toggleAccordion}
+        aria-expanded={isOpen}
+      >
         <h3>{title}</h3>
-        <span>{isOpen ? "▲" : "▼"}</span>
+        <span className={isOpen ? "open" : "closed"}>{"▼"}</span>
       </div>
-      {isOpen && <div className="accordion-content">{children}</div>}
+      <div className={`accordion-content ${isOpen ? "open" : ""}`}>
+        {children}
+      </div>
     </div>
   );
 };
