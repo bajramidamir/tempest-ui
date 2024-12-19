@@ -11,7 +11,7 @@ export const AllBadgesOnButtons = () => (
     <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
       <h4>Solid Badges</h4>
       <Badge content={99} color="default">
-        <Button radius="rounded" color="primary" variant="text">
+        <Button radius="rounded" color="primary">
           Default
         </Button>
       </Badge>
@@ -22,10 +22,14 @@ export const AllBadgesOnButtons = () => (
         <Button>Error</Button>
       </Badge>
       <Badge content={12} color="warning">
-        <Button>Warning</Button>
+        <Button variant="text" radius="rounded">
+          Warning
+        </Button>
       </Badge>
       <Badge content={15} color="info">
-        <Button>Info</Button>
+        <Button variant="outlined" color="primary">
+          Info
+        </Button>
       </Badge>
     </div>
 

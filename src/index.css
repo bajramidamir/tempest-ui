@@ -1,29 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 :root {
-  --color-primary: #e91e63; /* Cool pink accent */
-  --color-primary-text: #b0154b; /* Darker pink for text */
-  --color-primary-light: #ff3f7f; /* honestly just for the hover */
-  --color-primary-super-light: #ffe0eb;
-  --color-neutral: #364156; /* Neutral gray */
-  --color-neutral-text: #dee2e6; /* lighter gray for text */
-  --color-neutral-light: #3f4b63; /* honestly just for the hover */
+  --color-primary: #5171ff;
+  --color-primary-text: #8094ff;
+  --color-primary-light: #8094ff;
+  --color-primary-super-light: #d3e0ff;
+  --color-neutral: #e7ecef;
+  --color-neutral-text: #161616;
+  --color-neutral-light: #f5f5f5;
   --color-neutral-super-light: #d1d9db;
-  --color-success: #62ce2c; /* Keep existing success green */
-  --color-success-text: #409819; /* Darker success green */
-  --color-danger: #f75f5f; /* Keep existing danger red */
-  --color-danger-text: #d13030; /* Darker danger red */
-  --color-warning: #fb8500; /* Orange */
-  --color-info: #1ca3c4; /* Soft turquoise for info */
-  --color-light: #f8f8f8; /* Off-white for background */
-  --color-dark: #333333; /* Dark gray for text */
+  --color-success: #62ce2c;
+  --color-success-text: #409819;
+  --color-danger: #f75f5f;
+  --color-danger-text: #d13030;
+  --color-warning: #fb8500;
+  --color-info: #1ca3c4;
+  --color-light: #f5f5f5;
+  --color-dark: #161616;
   --color-white: #ffffff; /* Pure white */
   --color-black: #000000; /* Pure black */
   --color-disabled-text: #a0a0a0; /* Light gray for disabled text */
   --color-disabled: #e0e0e0; /* Light gray for disabled backgrounds */
-  --color-text-heading: #1a1a1a; /* Color for the headings */
-  --color-text-paragraph: #333333; /* Color for the paragraph */
-  --color-text-small: #555555; /* Color for the small text */
+  --color-text-heading: #1a1a1a;
+  --color-text-paragraph: #333333;
+  --color-text-small: #555555;
 }
 
 * {

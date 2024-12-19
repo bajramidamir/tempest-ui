@@ -10,7 +10,6 @@
     background-color 0.3s,
     box-shadow 0.3s,
     opacity 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-icon-start {
@@ -61,22 +60,19 @@
   color: var(--color-neutral-text);
 }
 
-.btn-neutral:hover {
-  background-color: var(--color-neutral-light);
-}
-
 .btn-neutral.btn-outlined {
-  color: var(--color-neutral);
+  color: var(--color-neutral-text);
   background-color: transparent;
 }
 
 .btn-neutral.btn-outlined:hover {
-  color: var(--color-neutral-text);
   background-color: var(--color-neutral);
+  color: var(--color-neutral-text);
+  border: 1px solid var(--color-neutral);
 }
 
 .btn-neutral.btn-text {
-  color: var(--color-neutral);
+  color: var(--color-neutral-text);
   background-color: transparent;
 }
 
@@ -89,10 +85,6 @@
   background-color: var(--color-primary);
   color: var(--color-white);
   border-color: var(--color-primary);
-}
-
-.btn-primary:hover {
-  background-color: var(--color-primary-light);
 }
 
 .btn-primary.btn-outlined {
@@ -120,7 +112,6 @@
   background-color: var(--color-disabled);
   color: var(--color-disabled-text);
   cursor: not-allowed;
-  box-shadow: none;
   pointer-events: none;
   border-color: #e2e2e2;
 }
