@@ -1,51 +1,94 @@
-# React + TypeScript + Vite
+# Tempest UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tempest UI** is an elegant, accessible, and developer-friendly UI component library for React. Designed with simplicity in mind, it empowers developers to build beautiful interfaces effortlessly while prioritizing usability and accessibility.
 
-Currently, two official plugins are available:
+Built entirely with **TypeScript**, Tempest UI ensures type safety and an excellent developer experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Elegant Design**: Minimalist, modern components that elevate your UI.
+- **Built-in Accessibility**: WCAG-compliant components to ensure inclusivity.
+- **TypeScript First**: Fully typed API for a smooth development experience.
+- **Performance-Focused**: Lightweight and fast, with no unnecessary dependencies.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Getting Started
+
+### Installation
+
+Install Tempest UI using your favorite package manager:
+
+```bash
+# Using npm
+npm install tempest-ui
+
+# Using Yarn
+yarn add tempest-ui
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 📦 Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Here’s a quick example to get started:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+#### Import and Use a Component:
+```tsx
+import React from 'react';
+import { Button } from 'tempest-ui';
+
+function App() {
+  return (
+    <div>
+      <h1>Welcome to Tempest UI</h1>
+      <Button variant="primary">Click Me</Button>
+    </div>
+  );
+}
+
+export default App;
 ```
-# quick-ui
+
+## 🛠️ Development
+
+### Setting Up the Library Locally
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/tempest-ui.git
+cd tempest-ui
+npm install
+```
+Run the project locally
+```bash
+npm run dev
+```
+
+## 📦 Components
+
+Tempest UI comes with a variety of accessible and reusable components. Below is a list of currently available components:
+
+- **Accordion**: Expandable sections for content organization.
+- **Avatar**: Display user profile pictures or icons.
+- **Badge**: Visual indicators for status or counts.
+- **Button**: Clickable buttons with various styles and sizes.
+- **Card**: Container for grouping related content.
+- **Checkbox**: Accessible checkbox input component.
+- **Chip**: Compact elements for displaying information or tags.
+- **Dropdown**: Customizable dropdown menus.
+- **Icon**: Use icons for enhanced visual elements.
+- **Input**: Styled input fields for forms.
+- **Link**: Styled and accessible anchor links.
+- **Loader**: Spinners or indicators for loading states.
+- **Modal**: Pop-up dialogs for focus-stealing content.
+- **ProgressBar**: Displays progress visually.
+- **RadioButton**: Accessible radio input for forms.
+- **Select**: Custom dropdown for selecting values.
+- **Switch**: Toggle switches for on/off states.
+- **Tabs**: Tabbed navigation components.
+- **Text**: Typography elements for text styling.
+- **Textarea**: Multi-line input fields.
+- **Tooltip**: Additional information on hover or focus.
+
+
