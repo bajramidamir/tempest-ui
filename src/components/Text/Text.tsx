@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import "./Text.css";
+import React from "react";
 
 interface TextProps {
   variant?:
@@ -47,4 +48,5 @@ const Text: FC<TextProps> = ({
   }
 };
 
+export { TextProps };
 export default Text;

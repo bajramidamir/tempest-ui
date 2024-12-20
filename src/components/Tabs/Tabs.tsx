@@ -1,5 +1,6 @@
 import { FC, ReactNode, useState } from "react";
 import "./Tabs.css";
+import React from "react";
 
 interface TabsProps {
   tabLabels: string[];
@@ -26,4 +27,5 @@ const Tabs: FC<TabsProps> = ({ tabLabels, tabs }) => {
   );
 };
 
+export { TabsProps };
 export default Tabs;

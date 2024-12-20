@@ -1,5 +1,6 @@
 import { ChangeEvent, FC } from "react";
 import "./Textarea.css";
+import React from "react";
 
 interface TextareaProps {
   placeholder?: string;
@@ -31,4 +32,5 @@ const Textarea: FC<TextareaProps> = ({
   );
 };
 
+export { TextareaProps };
 export default Textarea;

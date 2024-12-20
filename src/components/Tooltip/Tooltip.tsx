@@ -32,4 +32,5 @@ const Tooltip: FC<TooltipProps> = ({ content, children, position }) => {
   );
 };
 
+export { TooltipProps };
 export default Tooltip;

@@ -33,4 +33,5 @@ const RadioButton: FC<RadioButtonProps> = ({
   );
 };
 
+export { RadioButtonProps };
 export default RadioButton;

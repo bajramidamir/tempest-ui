@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import "./Link.css";
+import React from "react";
 
 interface LinkProps {
   href: string;
@@ -31,4 +32,5 @@ const Link: FC<LinkProps> = ({ href, children, target, disabled, onClick }) => {
   );
 };
 
+export { LinkProps };
 export default Link;

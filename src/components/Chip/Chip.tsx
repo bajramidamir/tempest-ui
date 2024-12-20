@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./Chip.css";
+import React from "react";
 
 interface ChipProps {
   label: string;
@@ -20,4 +21,5 @@ const Chip: FC<ChipProps> = ({ label, onToggle, isSelected }) => {
   );
 };
 
+export { ChipProps };
 export default Chip;

@@ -1,4 +1,5 @@
 import { FC } from "react";
+import React from "react";
 
 interface IconProps {
   src: string;
@@ -34,4 +35,5 @@ const Icon: FC<IconProps> = ({ src, alt, size = "medium", width, height }) => {
   );
 };
 
+export { IconProps };
 export default Icon;

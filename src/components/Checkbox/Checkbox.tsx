@@ -28,4 +28,5 @@ const Checkbox: FC<CheckboxProps> = ({
   );
 };
 
+export { CheckboxProps };
 export default Checkbox;

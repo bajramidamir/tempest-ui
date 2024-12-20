@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./Select.css";
+import React from "react";
 
 interface SelectProps {
   label: string;
@@ -39,4 +40,5 @@ const Select: FC<SelectProps> = ({
   );
 };
 
+export { SelectProps };
 export default Select;

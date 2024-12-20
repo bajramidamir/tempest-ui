@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./Switch.css";
+import React from "react";
 
 interface SwitchProps {
   checked: boolean;
@@ -25,4 +26,5 @@ const Switch: FC<SwitchProps> = ({ checked, onChange, disabled, label }) => {
   );
 };
 
+export { SwitchProps };
 export default Switch;

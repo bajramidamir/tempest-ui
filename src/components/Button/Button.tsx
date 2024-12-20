@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import "./Button.css";
+import React from "react";
 
 interface ButtonProps {
   children: ReactNode;
@@ -36,4 +37,5 @@ const Button: FC<ButtonProps> = ({
   );
 };
 
+export { ButtonProps };
 export default Button;

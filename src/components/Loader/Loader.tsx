@@ -20,4 +20,5 @@ const Loader: FC<LoaderProps> = ({ fullscreen }) => {
   );
 };
 
+export { LoaderProps };
 export default Loader;

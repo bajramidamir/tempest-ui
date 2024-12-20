@@ -1,5 +1,6 @@
 import { FC, useState } from "react";
 import "./Avatar.css";
+import React from "react";
 
 interface AvatarProps {
   src?: string;
@@ -58,4 +59,5 @@ const Avatar: FC<AvatarProps> = ({
   );
 };
 
+export { AvatarProps };
 export default Avatar;

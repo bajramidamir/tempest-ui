@@ -1,5 +1,6 @@
 import { useState, FC, ChangeEvent } from "react";
 import "./Dropdown.css";
+import React from "react";
 
 interface DropdownProps {
   label: string;
@@ -69,7 +70,9 @@ const Dropdown: FC<DropdownProps> = ({
               filteredOptions.map((option) => (
                 <li
                   key={option}
-                  className={`dropdown-item ${selectedOptions.includes(option) ? "selected" : ""}`}
+                  className={`dropdown-item ${
+                    selectedOptions.includes(option) ? "selected" : ""
+                  }`}
                   onClick={() => handleSelect(option)}
                 >
                   {isMultiSelect && (
@@ -93,4 +96,5 @@ const Dropdown: FC<DropdownProps> = ({
   );
 };
 
+export { DropdownProps };
 export default Dropdown;

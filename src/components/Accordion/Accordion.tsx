@@ -1,4 +1,4 @@
-import { useState, ReactNode, FC } from "react";
+import React, { useState, ReactNode, FC } from "react";
 import "./Accordion.css";
 
 interface AccordionProps {
@@ -33,4 +33,5 @@ const Accordion: FC<AccordionProps> = ({
   );
 };
 
+export { AccordionProps };
 export default Accordion;

@@ -1,5 +1,6 @@
 import { ChangeEvent, FC } from "react";
 import "./Input.css";
+import React from "react";
 
 interface InputProps {
   placeholder?: string;
@@ -28,4 +29,5 @@ const Input: FC<InputProps> = ({
   );
 };
 
+export { InputProps };
 export default Input;

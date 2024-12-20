@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import "./Badge.css";
+import React from "react";
 
 interface BadgeProps {
   content?: string | number;
@@ -28,4 +29,5 @@ const Badge: FC<BadgeProps> = ({
   );
 };
 
+export { BadgeProps };
 export default Badge;

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./ProgressBar.css";
+import React from "react";
 
 interface ProgressBarProps {
   value: number;
@@ -38,4 +39,5 @@ const ProgressBar: FC<ProgressBarProps> = ({
   );
 };
 
+export { ProgressBarProps };
 export default ProgressBar;

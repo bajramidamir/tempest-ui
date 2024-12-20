@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react";
 import Text from "../Text/Text";
 import "./Card.css";
+import React from "react";
 
 interface CardProps {
   avatar?: ReactNode;
@@ -44,4 +45,5 @@ const Card: FC<CardProps> = ({
   );
 };
 
+export { CardProps };
 export default Card;
