@@ -1,4 +1,5 @@
 import Dropdown from "../components/Dropdown/Dropdown";
+import React from "react";
 
 export default {
   title: "Components/Dropdown",

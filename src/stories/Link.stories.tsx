@@ -1,5 +1,6 @@
 import Link from "../components/Link/Link";
 import Text from "../components/Text/Text";
+import React from "react";
 
 export default {
   title: "Components/Link",

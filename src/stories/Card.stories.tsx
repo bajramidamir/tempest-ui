@@ -3,6 +3,7 @@ import Button from "../components/Button/Button";
 import Text from "../components/Text/Text";
 import Icon from "../components/Icon/Icon";
 import Avatar from "../components/Avatar/Avatar";
+import React from "react";
 
 export default {
   title: "Components/Card",

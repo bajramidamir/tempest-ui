@@ -1,6 +1,7 @@
 import Accordion from "../components/Accordion/Accordion";
 import Text from "../components/Text/Text";
 import Button from "../components/Button/Button";
+import React from "react";
 
 export default {
   title: "Components/Accordion",

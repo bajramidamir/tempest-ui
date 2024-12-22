@@ -5,7 +5,6 @@
   line-height: 1.6;
 }
 
-/* Heading Variants */
 .text-h1 {
   font-size: 2.25rem;
   font-weight: 600;
@@ -48,26 +47,22 @@
   color: var(--color-text-heading);
 }
 
-/* Paragraph Variant */
 .text-paragraph {
   font-size: 1rem;
   margin-bottom: 16px;
   color: var(--color-text-paragraph);
 }
 
-/* Small Text */
 .text-small {
   font-size: 0.875rem;
   color: var(--color-text-small);
 }
 
-/* Line-Through Text */
 .text-line-through {
   text-decoration: line-through;
   color: var(--color-text-small);
 }
 
-/* Custom Color Variant */
 .text-light {
   color: var(--color-light);
 }

@@ -1,4 +1,5 @@
 import Tabs from "../components/Tabs/Tabs";
+import React from "react";
 
 export default {
   title: "Components/Tabs",

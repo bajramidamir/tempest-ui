@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProgressBar from "../components/ProgressBar/ProgressBar";
+import React from "react";
 
 export default {
   title: "Components/ProgressBar",

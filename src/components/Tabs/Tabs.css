@@ -1,12 +1,9 @@
-/* Tabs container */
 .tabs {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: "Inter", sans-serif;
 }
 
-/* Tab headers */
 .tab-header-container {
   display: flex;
   justify-content: start;
@@ -32,7 +29,6 @@
   background-color: var(--color-primary-super-light);
 }
 
-/* Active tab */
 .tab-header.active {
   color: var(--color-white);
   font-weight: bold;
@@ -40,7 +36,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Tab content */
 .tab-content {
   padding: 16px;
   background-color: var(--color-white);

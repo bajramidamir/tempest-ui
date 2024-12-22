@@ -60,7 +60,7 @@
 }
 
 .accordion-content.open {
-  max-height: 500px; /* Adjust this value to fit your content's expected size */
+  max-height: 500px;
   padding: 16px;
 }
 

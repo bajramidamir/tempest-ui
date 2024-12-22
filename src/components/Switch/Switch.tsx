@@ -6,7 +6,7 @@ interface SwitchProps {
   checked: boolean;
   onChange: () => void;
   disabled?: boolean;
-  label?: string; // Optional: Label for screen readers
+  label?: string;
 }
 
 const Switch: FC<SwitchProps> = ({ checked, onChange, disabled, label }) => {

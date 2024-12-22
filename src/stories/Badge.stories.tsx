@@ -1,5 +1,6 @@
 import Badge from "../components/Badge/Badge";
 import Button from "../components/Button/Button";
+import React from "react";
 
 export default {
   title: "Components/Badge",

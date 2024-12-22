@@ -13,7 +13,7 @@ interface LinkProps {
 const Link: FC<LinkProps> = ({ href, children, target, disabled, onClick }) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (disabled) {
-      e.preventDefault(); // Prevent navigation if disabled
+      e.preventDefault();
       return;
     }
     onClick?.();

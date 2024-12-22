@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Chip from "../components/Chip/Chip";
+import React from "react";
 
 export default {
   title: "Components/Chip",

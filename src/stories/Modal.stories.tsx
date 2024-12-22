@@ -2,6 +2,7 @@ import { useState } from "react";
 import Modal from "../components/Modal/Modal";
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
+import React from "react";
 
 export default {
   title: "Components/Modal",

@@ -107,7 +107,6 @@
   box-shadow: none;
 }
 
-/* Disabled Button */
 .btn-disabled {
   background-color: var(--color-disabled);
   color: var(--color-disabled-text);
