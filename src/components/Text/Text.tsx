@@ -12,7 +12,8 @@ interface TextProps {
     | "h6"
     | "paragraph"
     | "small"
-    | "line-through";
+    | "line-through"
+    | "extra-large";
   color?: "primary" | "secondary" | "success" | "danger" | "light" | "dark";
   margin?: string;
   centered?: boolean;

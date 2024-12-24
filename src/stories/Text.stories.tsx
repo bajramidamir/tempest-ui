@@ -8,6 +8,7 @@ export default {
 
 export const Headings = () => (
   <>
+    <Text variant="extra-large">Extra Large</Text>
     <Text variant="h1">Heading 1</Text>
     <Text variant="h2">Heading 2</Text>
     <Text variant="h3">Heading 3</Text>

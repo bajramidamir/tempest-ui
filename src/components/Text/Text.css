@@ -6,6 +6,12 @@
   width: 100%;
 }
 
+.text-extra-large {
+  font-size: 3.25rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+}
+
 .text-h1 {
   font-size: 2.25rem;
   font-weight: 600;
