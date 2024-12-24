@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.blockquote-container {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.blockquote {
+  position: relative;
+  background-color: var(--color-light);
+  border-left: 4px solid var(--color-primary);
+  padding: 1rem;
+  font-style: italic;
+  color: var(--color-text-paragraph);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.code-block {
+  font-style: normal;
+  background-color: var(--color-terminal);
+  color: var(--color-light);
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+pre {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+.code {
+  font-family: "Roboto Mono", monospace;
+}
+
+.regular {
+  font-size: 1rem;
+  color: var(--color-text-heading);
+}
+
+.blockquote-button {
+  align-self: flex-start;
+}
