@@ -74,3 +74,6 @@ export type { BlockquoteProps } from "./components/Blockquote/Blockquote";
 
 export { default as Alert } from "./components/Alert/Alert";
 export type { AlertProps } from "./components/Alert/Alert";
+
+export { default as Navbar } from "./components/Navbar/Navbar";
+export type { NavbarProps } from "./components/Navbar/Navbar";

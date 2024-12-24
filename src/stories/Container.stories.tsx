@@ -30,7 +30,7 @@ export const InsideAndOutsideContainer = () => (
 
     {/* Inside Container */}
 
-    <Container>
+    <Container bgColor="#f0f0f0">
       <Text variant="h1">Inside Container</Text>
       <Text>
         This text is inside the Container component. The padding and margins

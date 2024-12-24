@@ -6,6 +6,7 @@ interface ContainerProps {
   padding?: string;
   margin?: string;
   maxWidth?: string;
+  bgColor?: string;
 }
 
 const Container: FC<ContainerProps> = ({
@@ -13,11 +14,12 @@ const Container: FC<ContainerProps> = ({
   padding = "1rem",
   margin = "auto",
   maxWidth = "1200px",
+  bgColor,
 }) => {
-  const style = { padding, margin, maxWidth };
+  const style = { padding, margin, maxWidth, backgroundColor: bgColor };
 
   return (
-    <div className="container" style={style}>
+    <div className={`container`} style={style}>
       {children}
     </div>
   );
