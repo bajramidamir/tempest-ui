@@ -77,3 +77,6 @@ export type { AlertProps } from "./components/Alert/Alert";
 
 export { default as Navbar } from "./components/Navbar/Navbar";
 export type { NavbarProps } from "./components/Navbar/Navbar";
+
+export { default as Spacer } from "./components/Spacer/Spacer";
+export type { SpacerProps } from "./components/Spacer/Spacer";
