@@ -1,0 +1,8 @@
+.form {
+  all: unset; /* Reset all browser styles */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  gap: 1.5rem; /* Add spacing between children */
+  width: 100%; /* Full width of the parent container */
+  box-sizing: border-box; /* Include padding/border in width/height */
+}

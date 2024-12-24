@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 16px; /* Add side padding by default */
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; /* Set the max-width for smaller screens */
+    padding: 0 24px; /* Increase padding for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px; /* Set max-width for medium screens */
+    padding: 0 32px; /* Further increase padding */
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px; /* Set max-width for large screens */
+    padding: 0 48px; /* Add generous padding for large screens */
+  }
+}

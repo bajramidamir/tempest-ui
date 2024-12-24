@@ -8,15 +8,23 @@ interface TextareaProps {
   value?: string;
   rows?: number;
   cols?: number;
+  name?: string;
+  id?: string;
+  required?: boolean;
+  maxLength?: number;
   onChange?: (e: ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
 const Textarea: FC<TextareaProps> = ({
   placeholder,
-  disabled,
+  disabled = false,
   value,
   rows = 4,
   cols = 50,
+  name,
+  id,
+  required = false,
+  maxLength,
   onChange,
 }) => {
   return (
@@ -27,6 +35,10 @@ const Textarea: FC<TextareaProps> = ({
       value={value}
       rows={rows}
       cols={cols}
+      name={name}
+      id={id}
+      required={required}
+      maxLength={maxLength}
       onChange={onChange}
     />
   );

@@ -7,14 +7,22 @@ interface InputProps {
   disabled?: boolean;
   value?: string;
   type: string;
+  name?: string;
+  id?: string;
+  required?: boolean;
+  autoComplete?: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Input: FC<InputProps> = ({
   placeholder,
-  disabled,
+  disabled = false,
   value,
   type,
+  name,
+  id,
+  required = false,
+  autoComplete = "on",
   onChange,
 }) => {
   return (
@@ -24,6 +32,10 @@ const Input: FC<InputProps> = ({
       placeholder={placeholder}
       disabled={disabled}
       value={value}
+      name={name}
+      id={id}
+      required={required}
+      autoComplete={autoComplete}
       onChange={onChange}
     />
   );

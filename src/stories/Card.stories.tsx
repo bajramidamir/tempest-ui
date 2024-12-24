@@ -62,10 +62,8 @@ export const WithoutTitle = () => (
 export const WithoutActions = () => (
   <Card
     image="https://via.placeholder.com/150"
-    title="Card Title Without Actions"
-    content={
-      <Text variant="paragraph">This card has no actions, just content.</Text>
-    }
+    title="No Actions"
+    content={<Text variant="paragraph">Content</Text>}
   />
 );
 
@@ -126,3 +124,5 @@ export const FauxSocialMediaPost = () => (
     }
   />
 );
+
+export const OnlyContent = () => <Card content="Just this" />;

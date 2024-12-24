@@ -14,17 +14,20 @@ interface TextProps {
     | "small"
     | "line-through";
   color?: "primary" | "secondary" | "success" | "danger" | "light" | "dark";
+  margin?: string;
+  centered?: boolean;
   children: ReactNode;
-  className?: string;
 }
 
 const Text: FC<TextProps> = ({
   variant = "paragraph",
   color,
+  margin,
   children,
-  className = "",
+  centered,
 }) => {
-  const classes = `text text-${variant} text-${color} ${className}`;
+  const classes =
+    `text text-${variant} text-${color} ${margin || ""} ${centered ? "text-center" : ""}`.trim();
 
   switch (variant) {
     case "h1":

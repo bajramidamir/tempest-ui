@@ -10,6 +10,7 @@
     background-color 0.3s,
     box-shadow 0.3s,
     opacity 0.3s;
+  max-width: fit-content;
 }
 
 .btn-icon-start {

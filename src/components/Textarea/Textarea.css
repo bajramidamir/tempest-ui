@@ -1,11 +1,12 @@
 .textarea {
   width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--color-primary);
   box-sizing: border-box;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
   font-size: 1rem;
   line-height: 1.5;
-  border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
   transition:
@@ -13,11 +14,8 @@
     box-shadow 0.3s ease;
 }
 
-.textarea:focus {
-  border-color: var(--color-neutral);
-  box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.1),
-    0 0 0 3px rgba(166, 208, 252, 0.25);
+.textarea:hover {
+  border: 1px solid var(--color-primary);
 }
 
 .textarea-disabled {
