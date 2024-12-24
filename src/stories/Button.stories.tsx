@@ -25,7 +25,7 @@ export const Buttons = () => (
         >
           Neutral
         </Button>
-        <Button radius="pill" variant="outlined">
+        <Button radius="pill" variant="text">
           <Icon src="trash.svg" />
         </Button>
         <Button

@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-fixed {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-light);
+}
+
+.navbar-primary {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.navbar-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+.navbar-light {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.navbar-dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.navbar-title {
+  font-weight: bold;
+}
+
+.navbar-title-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
