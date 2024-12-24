@@ -7,7 +7,7 @@ export default {
 };
 
 export const RegularBlockquote = () => (
-  <Blockquote copyable>
+  <Blockquote>
     "The only limit to our realization of tomorrow is our doubts of today." -
     Franklin D. Roosevelt
   </Blockquote>

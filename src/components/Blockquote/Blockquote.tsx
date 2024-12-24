@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Alert from "../Alert/Alert";
-import Button from "../Button/Button";
 import "./Blockquote.css";
 
 interface BlockquoteProps {
@@ -23,19 +22,15 @@ const Blockquote: React.FC<BlockquoteProps> = ({
   };
 
   return (
-    <div className="blockquote-container">
+    <div
+      className={`blockquote-container ${copyable ? "copyable" : ""}`}
+      onClick={copyable ? handleCopy : undefined}
+    >
       {showAlert && <Alert variant="success">Copied to clipboard!</Alert>}
       <blockquote className={`blockquote ${language ? "code-block" : ""}`}>
         <pre>
           <code className={`${language ? "code" : "regular"}`}>{children}</code>
         </pre>
-        {copyable && (
-          <div className="blockquote-button">
-            <Button color="primary" onClick={handleCopy}>
-              Copy
-            </Button>
-          </div>
-        )}
       </blockquote>
     </div>
   );

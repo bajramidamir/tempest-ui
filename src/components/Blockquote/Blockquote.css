@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-
 .blockquote-container {
   margin: 1rem 0;
   position: relative;
+}
+
+.blockquote-container.copyable {
+  cursor: pointer; /* Pointer cursor for copyable */
 }
 
 .blockquote {
@@ -16,6 +18,31 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.blockquote-container.copyable:hover .blockquote {
+  background-color: var(--color-primary-light);
+}
+
+.blockquote-container.copyable:hover .blockquote::before {
+  content: "📋";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.blockquote-container.copyable .blockquote::before {
+  opacity: 0;
+  transform: scale(0);
 }
 
 .code-block {
@@ -45,8 +72,4 @@ code {
 .regular {
   font-size: 1rem;
   color: var(--color-text-heading);
-}
-
-.blockquote-button {
-  align-self: flex-start;
 }
