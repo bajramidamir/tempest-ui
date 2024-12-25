@@ -139,3 +139,20 @@ export const ContactForm = () => {
     </Container>
   );
 };
+
+export const GridContainer = () => (
+  <Container layout="grid">
+    <Button color="primary" variant="filled">
+      Button
+    </Button>
+    <Button color="primary" variant="outlined">
+      Button
+    </Button>
+    <Button color="primary" variant="text">
+      Button
+    </Button>
+    <Button>Button</Button>
+    <Button>Button</Button>
+    <Button>Button</Button>
+  </Container>
+);

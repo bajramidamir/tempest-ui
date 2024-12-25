@@ -7,6 +7,7 @@ interface ContainerProps {
   margin?: string;
   maxWidth?: string;
   bgColor?: string;
+  layout?: "flex" | "grid";
 }
 
 const Container: FC<ContainerProps> = ({
@@ -15,11 +16,12 @@ const Container: FC<ContainerProps> = ({
   margin = "auto",
   maxWidth = "1200px",
   bgColor,
+  layout = "flex",
 }) => {
   const style = { padding, margin, maxWidth, backgroundColor: bgColor };
 
   return (
-    <div className={`container`} style={style}>
+    <div className={`container ${layout}`} style={style}>
       {children}
     </div>
   );
