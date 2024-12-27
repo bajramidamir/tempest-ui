@@ -21,6 +21,15 @@
   ); /* Flexible grid columns */
 }
 
+.container.centered {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text inside is centered */
+  flex-direction: column; /* Optional: Makes it column-oriented */
+}
+
+/* Responsive Design */
 @media (min-width: 768px) {
   .container {
     max-width: 720px; /* Set the max-width for smaller screens */

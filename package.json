@@ -49,7 +49,8 @@
     "storybook": "^8.4.7",
     "tslib": "^2.8.1",
     "typescript": "^5.5.3",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "esbuild": "^0.24.0"
   },
   "keywords": [
     "react",
@@ -59,8 +60,5 @@
     "library"
   ],
   "author": "Damir Bajrami",
-  "license": "MIT",
-  "dependencies": {
-    "esbuild": "^0.24.0"
-  }
+  "license": "MIT"
 }

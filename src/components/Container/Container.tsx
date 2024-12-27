@@ -7,7 +7,7 @@ interface ContainerProps {
   margin?: string;
   maxWidth?: string;
   bgColor?: string;
-  layout?: "flex" | "grid";
+  layout?: "flex" | "grid" | "centered";
 }
 
 const Container: FC<ContainerProps> = ({
