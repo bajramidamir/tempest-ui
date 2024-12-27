@@ -34,16 +34,19 @@ yarn add tempest-ui
 Here’s a quick example to get started:
 
 #### Import and Use a Component:
+
 ```tsx
-import React from 'react';
-import { Button } from 'tempest-ui';
+import React from "react";
+import { Button, Container, Text } from "tempest-ui";
 
 function App() {
   return (
-    <div>
-      <h1>Welcome to Tempest UI</h1>
-      <Button variant="primary">Click Me</Button>
-    </div>
+    <Container>
+      <Text variant="h1">Welcome to Tempest UI</Text>
+      <Button color="primary" variant="text">
+        Click Me
+      </Button>
+    </Container>
   );
 }
 
@@ -53,6 +56,7 @@ export default App;
 ## 🛠️ Development
 
 ### Setting Up the Library Locally
+
 Clone the repository and install dependencies:
 
 ```bash
@@ -60,7 +64,9 @@ git clone https://github.com/yourusername/tempest-ui.git
 cd tempest-ui
 npm install
 ```
+
 Run the project locally
+
 ```bash
 npm run dev
 ```
@@ -90,5 +96,3 @@ Tempest UI comes with a variety of accessible and reusable components. Below is 
 - **Text**: Typography elements for text styling.
 - **Textarea**: Multi-line input fields.
 - **Tooltip**: Additional information on hover or focus.
-
-
