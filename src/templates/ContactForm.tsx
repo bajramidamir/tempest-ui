@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// @ts-expect-error
 import { Container, Text, Textarea, Button, Input, Form } from "tempest-ui";
 
 const ContactForm: React.FC = () => {
@@ -48,7 +49,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <>
-      <Container>
+      <Container layout="centered">
         <Text variant="h1">Interested in what you see? Contact us!</Text>
         <Text>A small message goes a long way!</Text>
         <Form onSubmit={handleSubmit}>

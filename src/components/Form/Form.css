@@ -1,8 +1,8 @@
 .form {
-  all: unset; /* Reset all browser styles */
-  display: flex; /* Flexbox for layout */
-  flex-direction: column; /* Stack children vertically */
-  gap: 1.5rem; /* Add spacing between children */
-  width: 100%; /* Full width of the parent container */
-  box-sizing: border-box; /* Include padding/border in width/height */
+  all: unset; /* Resets browser styles */
+  box-sizing: inherit; /* Inherit box-sizing from the parent */
+  width: auto; /* Let it adapt to its container */
+  display: inherit; /* Inherit display from the parent */
+  flex-direction: inherit; /* Inherit flex direction from the parent */
+  gap: inherit; /* Inherit gap from the parent */
 }

@@ -15,10 +15,7 @@
 .container.grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(250px, 1fr)
-  ); /* Flexible grid columns */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .container.centered {
@@ -27,6 +24,7 @@
   align-items: center; /* Centers content vertically */
   text-align: center; /* Ensures text inside is centered */
   flex-direction: column; /* Optional: Makes it column-oriented */
+  gap: 1.5rem;
 }
 
 /* Responsive Design */
