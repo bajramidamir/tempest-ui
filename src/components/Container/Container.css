@@ -1,8 +1,8 @@
 .container {
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 0 16px; /* Add side padding by default */
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .container.flex {
@@ -16,56 +16,88 @@
   display: grid;
   gap: 1.5rem;
   place-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Default responsive grid */
 }
 
 .container.centered {
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  text-align: center; /* Ensures text inside is centered */
-  flex-direction: column; /* Optional: Makes it column-oriented */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
+/* Intelligent Grid Adjustment for Two Children */
+.container.grid:has(> :nth-child(2)):not(:has(> :nth-child(3))) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Shadows */
 .sm {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px; /* Subtle and lightweight */
-  border-radius: 4px; /* Slightly smaller radius */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
+  border-radius: 4px;
 }
 
 .md {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px; /* Moderate shadow for mid-size elements */
-  border-radius: 6px; /* Slightly rounded */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
+  border-radius: 6px;
 }
 
 .lg {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px; /* Larger shadow with increased blur */
-  border-radius: 8px; /* More rounded */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  border-radius: 8px;
 }
 
 .xl {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px; /* Dramatic and pronounced */
-  border-radius: 10px; /* Maximum rounding */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px;
+  border-radius: 10px;
 }
 
 /* Responsive Design */
 @media (min-width: 768px) {
   .container {
-    max-width: 720px; /* Set the max-width for smaller screens */
-    padding: 0 24px; /* Increase padding for larger screens */
+    max-width: 720px;
+    padding: 0 24px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 960px; /* Set max-width for medium screens */
-    padding: 0 32px; /* Further increase padding */
+    max-width: 960px;
+    padding: 0 32px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1200px; /* Set max-width for large screens */
-    padding: 0 48px; /* Add generous padding for large screens */
+    max-width: 1200px;
+    padding: 0 48px;
+  }
+}
+
+/* Adjust grid layout for specific screen breakpoints */
+@media (min-width: 600px) {
+  .container.grid:not(:has(> :nth-child(3))) {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Ensure 2 columns when only 2 items exist */
+  }
+
+  .container.grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    ); /* Default behavior */
+  }
+}
+
+@media (min-width: 900px) {
+  .container.grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for wider screens */
   }
 }

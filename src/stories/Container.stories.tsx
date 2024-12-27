@@ -5,6 +5,8 @@ import Card from "../components/Card/Card";
 import Input from "../components/Input/Input";
 import Textarea from "../components/Textarea/Textarea";
 import Form from "../components/Form/Form";
+import Checkbox from "../components/Checkbox/Checkbox";
+import Link from "../components/Link/Link";
 import React, { useState } from "react";
 
 export default {
@@ -156,3 +158,76 @@ export const GridContainer = () => (
     <Button>Button</Button>
   </Container>
 );
+
+export const LoginForm = () => {
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+  });
+  const [checked, setChecked] = useState<boolean>(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: [value] });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormData({
+      username: "",
+      password: "",
+    });
+  };
+
+  return (
+    <>
+      <Container>
+        <Text variant="h3">A simple login screen</Text>
+        <Link href="https://github.com/bajramidamir/tempest-ui">
+          <Button variant="text" color="primary">
+            Source code
+          </Button>
+        </Link>
+      </Container>
+
+      <Container layout="centered" shadow="sm" bgColor="var(--color-light)">
+        <Text variant="h1" color="primary">
+          Account Login
+        </Text>
+        <Form onSubmit={handleSubmit}>
+          <Input
+            type="text"
+            placeholder="Username"
+            name="username"
+            onChange={handleChange}
+          />
+          <Input
+            type="password"
+            placeholder="Password"
+            name="password"
+            onChange={handleChange}
+          />
+          <Checkbox
+            label="Remember me"
+            checked={checked}
+            onChange={() => setChecked(!checked)}
+          />
+          <Container margin="0" padding="0" layout="centered">
+            <Button color="primary" type="submit">
+              Login
+            </Button>
+          </Container>
+
+          <Text>Or sign up using</Text>
+          <Container padding="0px" margin="0" layout="grid">
+            <Button>Google</Button>
+            <Button>Facebook</Button>
+          </Container>
+        </Form>
+        <Text>
+          <Link href="#">Forgot your password? Reset it here!</Link>
+        </Text>
+      </Container>
+    </>
+  );
+};
