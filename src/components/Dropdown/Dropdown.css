@@ -1,5 +1,5 @@
 .dropdown {
-  position: relative;
+  position: relative; /* Anchor for the menu */
   display: inline-block;
   width: 100%;
 }
@@ -24,19 +24,35 @@
 }
 
 .dropdown-menu {
-  display: block;
+  position: absolute;
+  top: 100%; /* Align below button */
+  left: 0;
+  width: 100%;
   background-color: var(--color-white);
   border: 1px solid var(--color-gray-light);
   border-radius: 4px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  width: 100%;
   padding: 16px;
-  margin: 8px 0 0 0;
+  margin: 0; /* Avoid margin interference */
   list-style: none;
   max-height: 200px;
   max-width: 400px;
   overflow-y: auto;
+
+  /* Start with hidden and animate fade-in */
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none; /* Prevent interaction when hidden */
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Slide into place */
+  pointer-events: auto; /* Enable interaction */
 }
 
 .dropdown-item {
@@ -64,7 +80,6 @@
   padding: 12px 16px;
   border: 1px solid var(--color-light);
   font-size: 1rem;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
   transition:
     border-color 0.2s,
     box-shadow 0.2s;

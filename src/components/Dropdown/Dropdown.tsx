@@ -22,7 +22,7 @@ const Dropdown: FC<DropdownProps> = ({
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   const handleSelect = (option: string) => {
@@ -54,44 +54,42 @@ const Dropdown: FC<DropdownProps> = ({
         {selectedOptions.length > 0 ? selectedOptions.join(", ") : label}
         <span className="dropdown-arrow">&#x25BC;</span>
       </button>
-      {isOpen && (
-        <div className="dropdown-menu">
-          {isSearchable && (
-            <input
-              type="text"
-              className="dropdown-search"
-              placeholder="Search... 🔎"
-              value={searchTerm}
-              onChange={handleSearch}
-            />
+      <div className={`dropdown-menu ${isOpen ? "show" : ""}`}>
+        {isSearchable && (
+          <input
+            type="text"
+            className="dropdown-search"
+            placeholder="Search... 🔎"
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+        )}
+        <ul className="dropdown-options">
+          {filteredOptions.length > 0 ? (
+            filteredOptions.map((option) => (
+              <li
+                key={option}
+                className={`dropdown-item ${
+                  selectedOptions.includes(option) ? "selected" : ""
+                }`}
+                onClick={() => handleSelect(option)}
+              >
+                {isMultiSelect && (
+                  <input
+                    type="checkbox"
+                    className="dropdown-checkbox"
+                    checked={selectedOptions.includes(option)}
+                    readOnly
+                  />
+                )}
+                {option}
+              </li>
+            ))
+          ) : (
+            <li className="dropdown-no-options">No options found</li>
           )}
-          <ul className="dropdown-options">
-            {filteredOptions.length > 0 ? (
-              filteredOptions.map((option) => (
-                <li
-                  key={option}
-                  className={`dropdown-item ${
-                    selectedOptions.includes(option) ? "selected" : ""
-                  }`}
-                  onClick={() => handleSelect(option)}
-                >
-                  {isMultiSelect && (
-                    <input
-                      type="checkbox"
-                      className="dropdown-checkbox"
-                      checked={selectedOptions.includes(option)}
-                      readOnly
-                    />
-                  )}
-                  {option}
-                </li>
-              ))
-            ) : (
-              <li className="dropdown-no-options">No options found</li>
-            )}
-          </ul>
-        </div>
-      )}
+        </ul>
+      </div>
     </div>
   );
 };

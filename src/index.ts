@@ -80,3 +80,6 @@ export type { NavbarProps } from "./components/Navbar/Navbar";
 
 export { default as Spacer } from "./components/Spacer/Spacer";
 export type { SpacerProps } from "./components/Spacer/Spacer";
+
+export { default as Carousel } from "./components/Carousel/Carousel";
+export type { CarouselProps } from "./components/Carousel/Carousel";

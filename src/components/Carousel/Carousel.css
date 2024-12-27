@@ -1,0 +1,90 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--color-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Viewport (Visible area of slides) */
+.carousel-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Track (Holds all slides) */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each Slide */
+.carousel-slide {
+  flex: 0 0 100%; /* Makes each slide take full width */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  padding: 1.25rem; /* Space around the content */
+  height: 350px; /* Ensure a consistent height */
+  background: var(--color-white);
+  border: 1px solid var(--color-light);
+  box-sizing: border-box;
+  text-align: center; /* Ensure text content is centered */
+}
+
+/* Arrows (Previous and Next) */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-light);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
+
+.carousel-arrow.right {
+  right: 10px;
+}
+
+.carousel-arrow:hover {
+  background: var(--color-primary-light);
+  color: var(--color-light);
+}
+
+/* Dots (Pagination Indicators) */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: var(--color-primary); /* Active dot color */
+}
