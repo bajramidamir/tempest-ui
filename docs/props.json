@@ -1,0 +1,2425 @@
+[
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Tooltip/Tooltip.tsx",
+    "description": "",
+    "displayName": "Tooltip",
+    "methods": [],
+    "props": {
+      "content": {
+        "defaultValue": null,
+        "description": "",
+        "name": "content",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Tooltip/Tooltip.tsx",
+          "name": "TooltipProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Tooltip/Tooltip.tsx",
+            "name": "TooltipProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "ReactNode"
+        }
+      },
+      "position": {
+        "defaultValue": null,
+        "description": "",
+        "name": "position",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Tooltip/Tooltip.tsx",
+          "name": "TooltipProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Tooltip/Tooltip.tsx",
+            "name": "TooltipProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "\"top\" | \"bottom\" | \"left\" | \"right\""
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Textarea/Textarea.tsx",
+    "description": "",
+    "displayName": "Textarea",
+    "methods": [],
+    "props": {
+      "placeholder": {
+        "defaultValue": null,
+        "description": "",
+        "name": "placeholder",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "disabled": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "disabled",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "value": {
+        "defaultValue": null,
+        "description": "",
+        "name": "value",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "rows": {
+        "defaultValue": {
+          "value": "4"
+        },
+        "description": "",
+        "name": "rows",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "number"
+        }
+      },
+      "cols": {
+        "defaultValue": {
+          "value": "50"
+        },
+        "description": "",
+        "name": "cols",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "number"
+        }
+      },
+      "name": {
+        "defaultValue": null,
+        "description": "",
+        "name": "name",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "id": {
+        "defaultValue": null,
+        "description": "",
+        "name": "id",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "required": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "required",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "maxLength": {
+        "defaultValue": null,
+        "description": "",
+        "name": "maxLength",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "number"
+        }
+      },
+      "onChange": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onChange",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+          "name": "TextareaProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Textarea/Textarea.tsx",
+            "name": "TextareaProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "(e: ChangeEvent<HTMLTextAreaElement>) => void"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Text/Text.tsx",
+    "description": "",
+    "displayName": "Text",
+    "methods": [],
+    "props": {
+      "variant": {
+        "defaultValue": {
+          "value": "paragraph"
+        },
+        "description": "",
+        "name": "variant",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Text/Text.tsx",
+          "name": "TextProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"h1\" | \"h2\" | \"h3\" | \"h4\" | \"h5\" | \"h6\" | \"paragraph\" | \"small\" | \"line-through\" | \"extra-large\""
+        }
+      },
+      "color": {
+        "defaultValue": null,
+        "description": "",
+        "name": "color",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Text/Text.tsx",
+          "name": "TextProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"primary\" | \"secondary\" | \"success\" | \"danger\" | \"light\" | \"dark\""
+        }
+      },
+      "margin": {
+        "defaultValue": null,
+        "description": "",
+        "name": "margin",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Text/Text.tsx",
+          "name": "TextProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "centered": {
+        "defaultValue": null,
+        "description": "",
+        "name": "centered",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Text/Text.tsx",
+          "name": "TextProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Tabs/Tabs.tsx",
+    "description": "",
+    "displayName": "Tabs",
+    "methods": [],
+    "props": {
+      "tabLabels": {
+        "defaultValue": null,
+        "description": "",
+        "name": "tabLabels",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Tabs/Tabs.tsx",
+          "name": "TabsProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Tabs/Tabs.tsx",
+            "name": "TabsProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string[]"
+        }
+      },
+      "tabs": {
+        "defaultValue": null,
+        "description": "",
+        "name": "tabs",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Tabs/Tabs.tsx",
+          "name": "TabsProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Tabs/Tabs.tsx",
+            "name": "TabsProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "ReactNode[]"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Switch/Switch.tsx",
+    "description": "",
+    "displayName": "Switch",
+    "methods": [],
+    "props": {
+      "checked": {
+        "defaultValue": null,
+        "description": "",
+        "name": "checked",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+          "name": "SwitchProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+            "name": "SwitchProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "onChange": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onChange",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+          "name": "SwitchProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+            "name": "SwitchProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "() => void"
+        }
+      },
+      "disabled": {
+        "defaultValue": null,
+        "description": "",
+        "name": "disabled",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+          "name": "SwitchProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+            "name": "SwitchProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "label": {
+        "defaultValue": null,
+        "description": "",
+        "name": "label",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+          "name": "SwitchProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Switch/Switch.tsx",
+            "name": "SwitchProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Select/Select.tsx",
+    "description": "",
+    "displayName": "Select",
+    "methods": [],
+    "props": {
+      "label": {
+        "defaultValue": null,
+        "description": "",
+        "name": "label",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "options": {
+        "defaultValue": null,
+        "description": "",
+        "name": "options",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "{ value: string; label: string; disabled?: boolean; }[]"
+        }
+      },
+      "selectedValue": {
+        "defaultValue": null,
+        "description": "",
+        "name": "selectedValue",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "onChange": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onChange",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "(value: string) => void"
+        }
+      },
+      "color": {
+        "defaultValue": {
+          "value": "primary"
+        },
+        "description": "",
+        "name": "color",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"primary\" | \"neutral\""
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/RadioButton/RadioButton.tsx",
+    "description": "",
+    "displayName": "RadioButton",
+    "methods": [],
+    "props": {
+      "label": {
+        "defaultValue": null,
+        "description": "",
+        "name": "label",
+        "parent": {
+          "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+          "name": "RadioButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+            "name": "RadioButtonProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "name": {
+        "defaultValue": null,
+        "description": "",
+        "name": "name",
+        "parent": {
+          "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+          "name": "RadioButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+            "name": "RadioButtonProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "checked": {
+        "defaultValue": null,
+        "description": "",
+        "name": "checked",
+        "parent": {
+          "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+          "name": "RadioButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+            "name": "RadioButtonProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "onChange": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onChange",
+        "parent": {
+          "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+          "name": "RadioButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+            "name": "RadioButtonProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "() => void"
+        }
+      },
+      "disabled": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "disabled",
+        "parent": {
+          "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+          "name": "RadioButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/RadioButton/RadioButton.tsx",
+            "name": "RadioButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+    "description": "",
+    "displayName": "ProgressBar",
+    "methods": [],
+    "props": {
+      "value": {
+        "defaultValue": null,
+        "description": "",
+        "name": "value",
+        "parent": {
+          "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+          "name": "ProgressBarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+            "name": "ProgressBarProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "number"
+        }
+      },
+      "max": {
+        "defaultValue": {
+          "value": "100"
+        },
+        "description": "",
+        "name": "max",
+        "parent": {
+          "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+          "name": "ProgressBarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+            "name": "ProgressBarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "number"
+        }
+      },
+      "color": {
+        "defaultValue": {
+          "value": "primary"
+        },
+        "description": "",
+        "name": "color",
+        "parent": {
+          "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+          "name": "ProgressBarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+            "name": "ProgressBarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"primary\" | \"success\" | \"danger\" | \"warning\""
+        }
+      },
+      "size": {
+        "defaultValue": {
+          "value": "medium"
+        },
+        "description": "",
+        "name": "size",
+        "parent": {
+          "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+          "name": "ProgressBarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+            "name": "ProgressBarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "label": {
+        "defaultValue": null,
+        "description": "",
+        "name": "label",
+        "parent": {
+          "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+          "name": "ProgressBarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/ProgressBar/ProgressBar.tsx",
+            "name": "ProgressBarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Navbar/Navbar.tsx",
+    "description": "",
+    "displayName": "Navbar",
+    "methods": [],
+    "props": {
+      "title": {
+        "defaultValue": null,
+        "description": "",
+        "name": "title",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+          "name": "NavbarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+            "name": "NavbarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "titleIcon": {
+        "defaultValue": null,
+        "description": "",
+        "name": "titleIcon",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+          "name": "NavbarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+            "name": "NavbarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "actions": {
+        "defaultValue": null,
+        "description": "",
+        "name": "actions",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+          "name": "NavbarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+            "name": "NavbarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "ReactNode"
+        }
+      },
+      "color": {
+        "defaultValue": {
+          "value": "primary"
+        },
+        "description": "",
+        "name": "color",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+          "name": "NavbarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+            "name": "NavbarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"primary\" | \"secondary\" | \"light\" | \"dark\""
+        }
+      },
+      "fixed": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "fixed",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+          "name": "NavbarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+            "name": "NavbarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "customStyles": {
+        "defaultValue": null,
+        "description": "",
+        "name": "customStyles",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+          "name": "NavbarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Navbar/Navbar.tsx",
+            "name": "NavbarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "React.CSSProperties"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Modal/Modal.tsx",
+    "description": "",
+    "displayName": "Modal",
+    "methods": [],
+    "props": {
+      "isOpen": {
+        "defaultValue": null,
+        "description": "",
+        "name": "isOpen",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Modal/Modal.tsx",
+          "name": "ModalProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Modal/Modal.tsx",
+            "name": "ModalProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "onClose": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onClose",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Modal/Modal.tsx",
+          "name": "ModalProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Modal/Modal.tsx",
+            "name": "ModalProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "() => void"
+        }
+      },
+      "title": {
+        "defaultValue": null,
+        "description": "",
+        "name": "title",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Modal/Modal.tsx",
+          "name": "ModalProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Modal/Modal.tsx",
+            "name": "ModalProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Loader/Loader.tsx",
+    "description": "",
+    "displayName": "Loader",
+    "methods": [],
+    "props": {
+      "fullscreen": {
+        "defaultValue": null,
+        "description": "",
+        "name": "fullscreen",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Loader/Loader.tsx",
+          "name": "LoaderProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Loader/Loader.tsx",
+            "name": "LoaderProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Link/Link.tsx",
+    "description": "",
+    "displayName": "Link",
+    "methods": [],
+    "props": {
+      "href": {
+        "defaultValue": null,
+        "description": "",
+        "name": "href",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "target": {
+        "defaultValue": null,
+        "description": "",
+        "name": "target",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"_blank\" | \"_self\" | \"_parent\" | \"_top\""
+        }
+      },
+      "disabled": {
+        "defaultValue": null,
+        "description": "",
+        "name": "disabled",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "onClick": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onClick",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "() => void"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Input/Input.tsx",
+    "description": "",
+    "displayName": "Input",
+    "methods": [],
+    "props": {
+      "placeholder": {
+        "defaultValue": null,
+        "description": "",
+        "name": "placeholder",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "disabled": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "disabled",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "value": {
+        "defaultValue": null,
+        "description": "",
+        "name": "value",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "type": {
+        "defaultValue": null,
+        "description": "",
+        "name": "type",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "name": {
+        "defaultValue": null,
+        "description": "",
+        "name": "name",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "id": {
+        "defaultValue": null,
+        "description": "",
+        "name": "id",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "required": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "required",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "autoComplete": {
+        "defaultValue": {
+          "value": "on"
+        },
+        "description": "",
+        "name": "autoComplete",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "onChange": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onChange",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Input/Input.tsx",
+          "name": "InputProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Input/Input.tsx",
+            "name": "InputProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "(e: ChangeEvent<HTMLInputElement>) => void"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Icon/Icon.tsx",
+    "description": "",
+    "displayName": "Icon",
+    "methods": [],
+    "props": {
+      "src": {
+        "defaultValue": null,
+        "description": "",
+        "name": "src",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+          "name": "IconProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+            "name": "IconProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "alt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "alt",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+          "name": "IconProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+            "name": "IconProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "size": {
+        "defaultValue": {
+          "value": "medium"
+        },
+        "description": "",
+        "name": "size",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+          "name": "IconProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+            "name": "IconProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "width": {
+        "defaultValue": null,
+        "description": "",
+        "name": "width",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+          "name": "IconProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+            "name": "IconProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string | number"
+        }
+      },
+      "height": {
+        "defaultValue": null,
+        "description": "",
+        "name": "height",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+          "name": "IconProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Icon/Icon.tsx",
+            "name": "IconProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string | number"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Form/Form.tsx",
+    "description": "",
+    "displayName": "Form",
+    "methods": [],
+    "props": {
+      "onSubmit": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onSubmit",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Form/Form.tsx",
+          "name": "FormProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Form/Form.tsx",
+            "name": "FormProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "FormEventHandler<HTMLFormElement>"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Dropdown/Dropdown.tsx",
+    "description": "",
+    "displayName": "Dropdown",
+    "methods": [],
+    "props": {
+      "label": {
+        "defaultValue": null,
+        "description": "",
+        "name": "label",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+          "name": "DropdownProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+            "name": "DropdownProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "options": {
+        "defaultValue": null,
+        "description": "",
+        "name": "options",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+          "name": "DropdownProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+            "name": "DropdownProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string[]"
+        }
+      },
+      "onSelect": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onSelect",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+          "name": "DropdownProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+            "name": "DropdownProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "(selectedOptions: string[]) => void"
+        }
+      },
+      "isMultiSelect": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "isMultiSelect",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+          "name": "DropdownProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+            "name": "DropdownProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "isSearchable": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "isSearchable",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+          "name": "DropdownProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Dropdown/Dropdown.tsx",
+            "name": "DropdownProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Container/Container.tsx",
+    "description": "",
+    "displayName": "Container",
+    "methods": [],
+    "props": {
+      "padding": {
+        "defaultValue": {
+          "value": "1rem"
+        },
+        "description": "",
+        "name": "padding",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Container/Container.tsx",
+          "name": "ContainerProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Container/Container.tsx",
+            "name": "ContainerProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "margin": {
+        "defaultValue": {
+          "value": "auto"
+        },
+        "description": "",
+        "name": "margin",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Container/Container.tsx",
+          "name": "ContainerProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Container/Container.tsx",
+            "name": "ContainerProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "maxWidth": {
+        "defaultValue": {
+          "value": "1200px"
+        },
+        "description": "",
+        "name": "maxWidth",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Container/Container.tsx",
+          "name": "ContainerProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Container/Container.tsx",
+            "name": "ContainerProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "bgColor": {
+        "defaultValue": null,
+        "description": "",
+        "name": "bgColor",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Container/Container.tsx",
+          "name": "ContainerProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Container/Container.tsx",
+            "name": "ContainerProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "layout": {
+        "defaultValue": {
+          "value": "flex"
+        },
+        "description": "",
+        "name": "layout",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Container/Container.tsx",
+          "name": "ContainerProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Container/Container.tsx",
+            "name": "ContainerProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"flex\" | \"grid\" | \"centered\""
+        }
+      },
+      "shadow": {
+        "defaultValue": null,
+        "description": "",
+        "name": "shadow",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Container/Container.tsx",
+          "name": "ContainerProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Container/Container.tsx",
+            "name": "ContainerProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"sm\" | \"md\" | \"lg\" | \"xl\""
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Chip/Chip.tsx",
+    "description": "",
+    "displayName": "Chip",
+    "methods": [],
+    "props": {
+      "label": {
+        "defaultValue": null,
+        "description": "",
+        "name": "label",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Chip/Chip.tsx",
+          "name": "ChipProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Chip/Chip.tsx",
+            "name": "ChipProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "onToggle": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onToggle",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Chip/Chip.tsx",
+          "name": "ChipProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Chip/Chip.tsx",
+            "name": "ChipProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "(label: string) => void"
+        }
+      },
+      "isSelected": {
+        "defaultValue": null,
+        "description": "",
+        "name": "isSelected",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Chip/Chip.tsx",
+          "name": "ChipProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Chip/Chip.tsx",
+            "name": "ChipProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Checkbox/Checkbox.tsx",
+    "description": "",
+    "displayName": "Checkbox",
+    "methods": [],
+    "props": {
+      "label": {
+        "defaultValue": null,
+        "description": "",
+        "name": "label",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+          "name": "CheckboxProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+            "name": "CheckboxProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "checked": {
+        "defaultValue": null,
+        "description": "",
+        "name": "checked",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+          "name": "CheckboxProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+            "name": "CheckboxProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "onChange": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onChange",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+          "name": "CheckboxProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+            "name": "CheckboxProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "() => void"
+        }
+      },
+      "disabled": {
+        "defaultValue": null,
+        "description": "",
+        "name": "disabled",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+          "name": "CheckboxProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Checkbox/Checkbox.tsx",
+            "name": "CheckboxProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Card/Card.tsx",
+    "description": "",
+    "displayName": "Card",
+    "methods": [],
+    "props": {
+      "avatar": {
+        "defaultValue": null,
+        "description": "",
+        "name": "avatar",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Card/Card.tsx",
+          "name": "CardProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Card/Card.tsx",
+            "name": "CardProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "ReactNode"
+        }
+      },
+      "avatarTitle": {
+        "defaultValue": null,
+        "description": "",
+        "name": "avatarTitle",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Card/Card.tsx",
+          "name": "CardProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Card/Card.tsx",
+            "name": "CardProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "image": {
+        "defaultValue": null,
+        "description": "",
+        "name": "image",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Card/Card.tsx",
+          "name": "CardProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Card/Card.tsx",
+            "name": "CardProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "title": {
+        "defaultValue": null,
+        "description": "",
+        "name": "title",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Card/Card.tsx",
+          "name": "CardProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Card/Card.tsx",
+            "name": "CardProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "content": {
+        "defaultValue": null,
+        "description": "",
+        "name": "content",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Card/Card.tsx",
+          "name": "CardProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Card/Card.tsx",
+            "name": "CardProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "ReactNode"
+        }
+      },
+      "actions": {
+        "defaultValue": null,
+        "description": "",
+        "name": "actions",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Card/Card.tsx",
+          "name": "CardProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Card/Card.tsx",
+            "name": "CardProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "ReactNode"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Button/Button.tsx",
+    "description": "",
+    "displayName": "Button",
+    "methods": [],
+    "props": {
+      "onClick": {
+        "defaultValue": null,
+        "description": "",
+        "name": "onClick",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "() => void"
+        }
+      },
+      "disabled": {
+        "defaultValue": null,
+        "description": "",
+        "name": "disabled",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "color": {
+        "defaultValue": {
+          "value": "neutral"
+        },
+        "description": "",
+        "name": "color",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"primary\" | \"neutral\""
+        }
+      },
+      "variant": {
+        "defaultValue": null,
+        "description": "",
+        "name": "variant",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"filled\" | \"outlined\" | \"text\" | \"disabled\""
+        }
+      },
+      "radius": {
+        "defaultValue": {
+          "value": "square"
+        },
+        "description": "",
+        "name": "radius",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"square\" | \"rounded\" | \"pill\""
+        }
+      },
+      "startIcon": {
+        "defaultValue": null,
+        "description": "",
+        "name": "startIcon",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "ReactNode"
+        }
+      },
+      "endIcon": {
+        "defaultValue": null,
+        "description": "",
+        "name": "endIcon",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "ReactNode"
+        }
+      },
+      "type": {
+        "defaultValue": {
+          "value": "button"
+        },
+        "description": "",
+        "name": "type",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"submit\" | \"reset\" | \"button\""
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Badge/Badge.tsx",
+    "description": "",
+    "displayName": "Badge",
+    "methods": [],
+    "props": {
+      "content": {
+        "defaultValue": null,
+        "description": "",
+        "name": "content",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+          "name": "BadgeProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+            "name": "BadgeProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string | number"
+        }
+      },
+      "color": {
+        "defaultValue": {
+          "value": "default"
+        },
+        "description": "",
+        "name": "color",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+          "name": "BadgeProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+            "name": "BadgeProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"success\" | \"warning\" | \"default\" | \"error\" | \"info\""
+        }
+      },
+      "dot": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "dot",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+          "name": "BadgeProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+            "name": "BadgeProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "hidden": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "hidden",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+          "name": "BadgeProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Badge/Badge.tsx",
+            "name": "BadgeProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Avatar/Avatar.tsx",
+    "description": "",
+    "displayName": "Avatar",
+    "methods": [],
+    "props": {
+      "src": {
+        "defaultValue": null,
+        "description": "",
+        "name": "src",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "alt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "alt",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "size": {
+        "defaultValue": {
+          "value": "medium"
+        },
+        "description": "",
+        "name": "size",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "shape": {
+        "defaultValue": {
+          "value": "circle"
+        },
+        "description": "",
+        "name": "shape",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"square\" | \"circle\""
+        }
+      },
+      "fallbackText": {
+        "defaultValue": {
+          "value": ""
+        },
+        "description": "",
+        "name": "fallbackText",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      },
+      "border": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "border",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      },
+      "bgColor": {
+        "defaultValue": {
+          "value": "#f7f7f7"
+        },
+        "description": "",
+        "name": "bgColor",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "string"
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Alert/Alert.tsx",
+    "description": "",
+    "displayName": "Alert",
+    "methods": [],
+    "props": {
+      "variant": {
+        "defaultValue": {
+          "value": "info"
+        },
+        "description": "",
+        "name": "variant",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Alert/Alert.tsx",
+          "name": "AlertProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Alert/Alert.tsx",
+            "name": "AlertProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"success\" | \"danger\" | \"warning\" | \"info\""
+        }
+      }
+    }
+  },
+  {
+    "tags": {},
+    "filePath": "/home/damir/Documents/tempest-ui/src/components/Accordion/Accordion.tsx",
+    "description": "",
+    "displayName": "Accordion",
+    "methods": [],
+    "props": {
+      "title": {
+        "defaultValue": null,
+        "description": "",
+        "name": "title",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Accordion/Accordion.tsx",
+          "name": "AccordionProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Accordion/Accordion.tsx",
+            "name": "AccordionProps"
+          }
+        ],
+        "required": true,
+        "type": {
+          "name": "string"
+        }
+      },
+      "initialOpen": {
+        "defaultValue": {
+          "value": "false"
+        },
+        "description": "",
+        "name": "initialOpen",
+        "parent": {
+          "fileName": "tempest-ui/src/components/Accordion/Accordion.tsx",
+          "name": "AccordionProps"
+        },
+        "declarations": [
+          {
+            "fileName": "tempest-ui/src/components/Accordion/Accordion.tsx",
+            "name": "AccordionProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "boolean"
+        }
+      }
+    }
+  }
+]
