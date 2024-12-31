@@ -86,3 +86,6 @@ export type { CarouselProps } from "./components/Carousel/Carousel";
 
 export { default as Table } from "./components/Table/Table";
 export type { TableProps } from "./components/Table/Table";
+
+export { default as Image } from "./components/Image/Image";
+export type { ImageProps } from "./components/Image/Image";

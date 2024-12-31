@@ -1,0 +1,21 @@
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.image.rounded {
+  border-radius: 10px;
+}
+
+.image.square {
+  border-radius: 0;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
