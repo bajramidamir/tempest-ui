@@ -11,7 +11,7 @@ thead {
   color: var(--color-white);
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.05em;
 }
 
@@ -27,7 +27,7 @@ tbody tr {
 
 tbody tr:hover {
   background-color: var(--color-light);
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease;
 }
 
 td {
@@ -37,14 +37,6 @@ td {
 tfoot {
   background-color: var(--color-white);
   font-weight: 600;
-}
-
-caption {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  text-align: left;
-  color: var(--color-neutral-text);
-  font-weight: 500;
 }
 
 table {
