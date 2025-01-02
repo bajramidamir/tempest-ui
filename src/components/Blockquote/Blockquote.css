@@ -27,19 +27,6 @@
   background-color: var(--color-primary-light);
 }
 
-.blockquote-container.copyable:hover .blockquote::before {
-  content: "📋";
-  font-size: 1.5rem;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
-  transform: scale(1);
-  opacity: 1;
-}
-
 .blockquote-container.copyable .blockquote::before {
   opacity: 0;
   transform: scale(0);
