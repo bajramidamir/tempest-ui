@@ -1,8 +1,8 @@
 .link {
-  text-decoration: underline;
   color: inherit;
   font-size: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -15,4 +15,32 @@
   color: var(--color-disabled-text);
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.link-underline {
+  text-decoration: underline;
+}
+
+.link-none {
+  text-decoration: none;
+}
+
+.link-dotted {
+  text-decoration: dotted underline;
+}
+
+.link-dashed {
+  text-decoration: dashed underline;
+}
+
+.link-wavy {
+  text-decoration: wavy underline;
+}
+
+.link-double {
+  text-decoration: double underline;
+}
+
+.link-solid {
+  text-decoration: solid underline;
 }
