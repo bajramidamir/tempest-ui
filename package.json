@@ -1,6 +1,6 @@
 {
   "name": "tempest-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "An elegant and easy to use React UI component library",
   "main": "dist/index.js",
