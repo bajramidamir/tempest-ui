@@ -31,11 +31,6 @@
   gap: 1.5rem;
 }
 
-/* Intelligent Grid Adjustment for Two Children */
-.container.grid:has(> :nth-child(2)):not(:has(> :nth-child(3))) {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 /* Shadows */
 .sm {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
@@ -79,20 +74,24 @@
   }
 }
 
-/* Adjust grid layout for specific screen breakpoints */
-@media (min-width: 600px) {
-  .container.grid:not(:has(> :nth-child(3))) {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Ensure 2 columns when only 2 items exist */
+/* Adjust grid layout for smaller screen sizes */
+@media (max-width: 599px) {
+  .container.grid {
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
   }
+}
 
+@media (min-width: 600px) {
   .container.grid {
     grid-template-columns: repeat(
       auto-fill,
       minmax(250px, 1fr)
-    ); /* Default behavior */
+    ); /* Default behavior for 2+ items */
+  }
+
+  /* Ensure 2 columns when only 2 items exist */
+  .container.grid:has(> :nth-child(2)):not(:has(> :nth-child(3))) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
