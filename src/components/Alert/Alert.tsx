@@ -7,7 +7,11 @@ interface AlertProps {
 }
 
 const Alert: FC<AlertProps> = ({ variant = "info", children }) => {
-  return <div className={`alert alert-${variant}`}>{children}</div>;
+  return (
+    <div role="alert" className={`alert alert-${variant}`}>
+      {children}
+    </div>
+  );
 };
 
 export { AlertProps };

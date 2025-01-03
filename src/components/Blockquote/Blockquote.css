@@ -4,7 +4,7 @@
 }
 
 .blockquote-container.copyable {
-  cursor: copy; /* Pointer cursor for copyable */
+  cursor: copy;
 }
 
 .blockquote {

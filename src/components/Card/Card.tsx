@@ -21,24 +21,28 @@ const Card: FC<CardProps> = ({
   actions,
 }) => {
   return (
-    <div className="card">
+    <div
+      className="card"
+      role="region"
+      aria-labelledby={title ? "card-title" : undefined}
+    >
       {avatar && (
-        <div className="card-avatar">
+        <div className="card-avatar" aria-labelledby="card-avatar-title">
           {avatar}
-          <p>{avatarTitle}</p>
+          {avatarTitle && <p id="card-avatar-title">{avatarTitle}</p>}
         </div>
       )}
 
       {image && (
         <img
           src={image}
-          alt={title}
+          alt={title ? `${title} image` : "Card image"}
           className={avatar ? "card-image" : "card-image-rounded"}
         />
       )}
       <div className="card-body">
         {title && <Text variant="h3">{title}</Text>}
-        <div>{content}</div>
+        <div className="card-content">{content}</div>
         {actions && <div className="card-actions">{actions}</div>}
       </div>
     </div>

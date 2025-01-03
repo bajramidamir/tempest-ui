@@ -21,15 +21,35 @@ const Blockquote: React.FC<BlockquoteProps> = ({
     setTimeout(() => setShowAlert(false), 3000);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (copyable && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      handleCopy();
+    }
+  };
+
   return (
     <div
       className={`blockquote-container ${copyable ? "copyable" : ""}`}
       onClick={copyable ? handleCopy : undefined}
+      onKeyDown={copyable ? handleKeyDown : undefined}
+      role={copyable ? "button" : undefined}
+      tabIndex={copyable ? 0 : undefined}
+      aria-label={
+        copyable
+          ? "Click or press Enter to copy blockquote content to the clipboard"
+          : undefined
+      }
+      aria-live={showAlert ? "polite" : undefined}
     >
-      {showAlert && <Alert variant="success">Copied to clipboard!</Alert>}
+      {showAlert && (
+        <Alert variant="success" aria-live="assertive">
+          Copied to clipboard!
+        </Alert>
+      )}
       <blockquote className={`blockquote ${language ? "code-block" : ""}`}>
         <pre>
-          <code className={`${language ? "code" : "regular"}`}>{children}</code>
+          <code className={`${language || "plain-text"}`}>{children}</code>
         </pre>
       </blockquote>
     </div>

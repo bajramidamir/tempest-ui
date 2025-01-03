@@ -1,6 +1,6 @@
 import { FC, ReactNode } from "react";
-import "./Badge.css";
 import React from "react";
+import "./Badge.css";
 
 interface BadgeProps {
   content?: string | number;
@@ -22,7 +22,11 @@ const Badge: FC<BadgeProps> = ({
   return (
     <div className="badge-wrapper">
       {children}
-      <span className={`badge badge-${color} ${dot ? "badge-dot" : ""}`}>
+      <span
+        className={`badge badge-${color} ${dot ? "badge-dot" : ""}`}
+        aria-hidden={dot}
+        aria-label={!dot && content ? `Badge: ${content}` : undefined}
+      >
         {!dot && content}
       </span>
     </div>

@@ -19,8 +19,12 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   };
 
   return (
-    <div className="carousel">
-      <button className="carousel-arrow left" onClick={previousSlide}>
+    <div className="carousel" aria-roledescription="carousel">
+      <button
+        className="carousel-arrow left"
+        onClick={previousSlide}
+        aria-label="Previous slide"
+      >
         <svg
           width="100%"
           height="100%"
@@ -31,25 +35,35 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
           <path
             d="M18 17L13 12L18 7M11 17L6 12L11 7"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </button>
-      <div className="carousel-viewport">
+      <div className="carousel-viewport" role="region" aria-live="polite">
         <div
           className="carousel-track"
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
           {items.map((item, index) => (
-            <div key={index} className="carousel-slide">
+            <div
+              key={index}
+              className="carousel-slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label={`Slide ${index + 1} of ${items.length}`}
+            >
               {item}
             </div>
           ))}
         </div>
       </div>
-      <button className="carousel-arrow right" onClick={nextSlide}>
+      <button
+        className="carousel-arrow right"
+        onClick={nextSlide}
+        aria-label="Next slide"
+      >
         <svg
           width="100%"
           height="100%"
@@ -60,18 +74,24 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
           <path
             d="M6 17L11 12L6 7M13 17L18 12L13 7"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </button>
-      <div className="carousel-dots">
+      <div
+        className="carousel-dots"
+        role="navigation"
+        aria-label="Carousel dots"
+      >
         {items.map((_, index) => (
           <button
             key={index}
             className={`dot ${index === activeIndex ? "active" : ""}`}
             onClick={() => setActiveIndex(index)}
+            aria-label={`Go to slide ${index + 1}`}
+            aria-current={index === activeIndex ? "true" : undefined}
           />
         ))}
       </div>

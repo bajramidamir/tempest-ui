@@ -16,17 +16,33 @@ const Accordion: FC<AccordionProps> = ({
 
   const toggleAccordion = () => setIsOpen((prev) => !prev);
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key == "Enter" || e.key == " ") {
+      e.preventDefault();
+      toggleAccordion();
+    }
+  };
+
   return (
     <div className="accordion">
       <div
+        role="button"
+        tabIndex={0}
+        onKeyDown={handleKeyDown}
         className="accordion-header"
         onClick={toggleAccordion}
         aria-expanded={isOpen}
       >
         <h3>{title}</h3>
-        <span className={isOpen ? "open" : "closed"}>{"▼"}</span>
+        <span aria-hidden="true" className={isOpen ? "open" : "closed"}>
+          {"▼"}
+        </span>
       </div>
-      <div className={`accordion-content ${isOpen ? "open" : ""}`}>
+      <div
+        role="region"
+        aria-hidden={!isOpen}
+        className={`accordion-content ${isOpen ? "open" : ""}`}
+      >
         {children}
       </div>
     </div>

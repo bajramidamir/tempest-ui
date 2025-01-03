@@ -1,6 +1,6 @@
 import { FC, ReactNode } from "react";
-import "./Button.css";
 import React from "react";
+import "./Button.css";
 
 interface ButtonProps {
   children: ReactNode;
@@ -19,23 +19,34 @@ const Button: FC<ButtonProps> = ({
   onClick,
   disabled,
   color = "neutral",
-  variant,
+  variant = "filled",
   radius = "square",
   startIcon,
   endIcon,
   type = "button",
 }) => {
+  const isDisabled = disabled || variant === "disabled";
+
   return (
     <button
       className={`btn btn-${variant} btn-${color} btn-${radius}`}
-      onClick={onClick}
-      disabled={disabled || variant === "disabled"}
-      aria-disabled={disabled || variant === "disabled" ? "true" : "false"}
+      onClick={isDisabled ? undefined : onClick}
+      disabled={isDisabled}
+      aria-disabled={isDisabled ? "true" : undefined}
       type={type}
+      role="button"
     >
-      {startIcon && <span className="btn-icon-start">{startIcon}</span>}
+      {startIcon && (
+        <span className="btn-icon-start" aria-hidden="true">
+          {startIcon}
+        </span>
+      )}
       <span className="btn-text">{children}</span>
-      {endIcon && <span className="btn-icon-end">{endIcon}</span>}
+      {endIcon && (
+        <span className="btn-icon-end" aria-hidden="true">
+          {endIcon}
+        </span>
+      )}
     </button>
   );
 };

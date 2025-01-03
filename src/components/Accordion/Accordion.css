@@ -24,6 +24,10 @@
   user-select: none;
 }
 
+.accordion-header:focus {
+  background-color: var(--color-primary-light);
+}
+
 .accordion-header:hover {
   background-color: var(--color-primary-light);
 }
